@@ -74,8 +74,12 @@
     .section p.lead-small{color:var(--muted);max-width:72ch;margin:.25rem 0 1.4rem;line-height:1.7}
 
     .insta-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1rem}
-    blockquote.instagram-media{margin:0 auto!important;max-width:420px!important;width:100%!important;background:transparent;}
+    .insta-card{border-radius:14px;overflow:hidden;border:1px solid var(--stroke);background:rgba(0,0,0,0.5);box-shadow:0 14px 36px rgba(0,0,0,0.4);transition:transform .35s ease,box-shadow .35s ease}
+    .insta-card:hover{transform:translateY(-4px);box-shadow:0 18px 46px rgba(198,156,109,0.25)}
+    blockquote.instagram-media{margin:0 auto!important;max-width:100%!important;width:100%!important;background:transparent;}
     .ig-note{color:var(--muted);margin-top:.8rem;line-height:1.6}
+    .reveal{opacity:0;transform:translateY(30px);transition:opacity .6s ease,transform .6s ease}
+    .reveal.visible{opacity:1;transform:translateY(0)}
 
     .about{display:grid;grid-template-columns:1.05fr .95fr;gap:1.25rem}
     .panel-text{padding:1.25rem 1.3rem;border:1px solid var(--stroke);border-radius:14px;background:var(--panel-strong);box-shadow:0 12px 28px rgba(0,0,0,0.32)}
@@ -110,7 +114,6 @@
         </div>
       </div>
       <div class="navlinks">
-        <a href="#portfolio">Arbeiten</a>
         <a href="#instagram">Instagram</a>
         <a href="#about">Über &amp; Booking</a>
         <a class="nav-cta" href="https://instagram.com/jawana.inx" target="_blank" rel="noopener noreferrer">@jawana.inx</a>
@@ -162,40 +165,18 @@
       </div>
     </section>
 
-    <section id="portfolio" class="section" aria-labelledby="portfolio-title">
-      <h2 id="portfolio-title">Direkt aus Instagram</h2>
-      <p class="lead-small">Echte Arbeiten von @jawana.inx – live geladen über den offiziellen Instagram-Embed. Tippe auf die Posts für mehr.</p>
+    <section id="instagram" class="section" aria-labelledby="instagram-title">
+      <h2 id="instagram-title">Instagram Highlights</h2>
+      <p class="lead-small">Echte Arbeiten von @jawana.inx – als Instagram-Embed mit smoothen Reveal-Effekten. Tippe auf die Posts für Details.</p>
       <div class="insta-grid">
-        <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DRatLh5iO9h/" data-instgrm-version="14"></blockquote>
-        <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DRO-ZuDiGSK/" data-instgrm-version="14"></blockquote>
-        <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DRjXvAFiBR2/" data-instgrm-version="14"></blockquote>
-        <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DRltx57iHw-/" data-instgrm-version="14"></blockquote>
-        <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DRob9uJiHPV/" data-instgrm-version="14"></blockquote>
-        <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DRCPa8eCN-y/" data-instgrm-version="14"></blockquote>
+        <div class="insta-card reveal"><blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DRatLh5iO9h/" data-instgrm-version="14"></blockquote></div>
+        <div class="insta-card reveal"><blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DRO-ZuDiGSK/" data-instgrm-version="14"></blockquote></div>
+        <div class="insta-card reveal"><blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DRjXvAFiBR2/" data-instgrm-version="14"></blockquote></div>
+        <div class="insta-card reveal"><blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DRltx57iHw-/" data-instgrm-version="14"></blockquote></div>
+        <div class="insta-card reveal"><blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DRob9uJiHPV/" data-instgrm-version="14"></blockquote></div>
+        <div class="insta-card reveal"><blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DRCPa8eCN-y/" data-instgrm-version="14"></blockquote></div>
       </div>
       <p class="ig-note">Mehr Arbeiten, Flash Drops und Verfügbarkeiten direkt im Feed: <a href="https://instagram.com/jawana.inx" target="_blank" rel="noopener noreferrer">@jawana.inx</a></p>
-    </section>
-
-    <section id="instagram" class="section" aria-labelledby="instagram-title">
-      <h2 id="instagram-title">Instagram Live</h2>
-      <p class="lead-small">Schau dir aktuelle Posts an. Der offizielle Instagram-Embed funktioniert ohne private Keys – du kannst diesen Code öffentlich hosten.</p>
-      <div class="ig-block">
-        <div>
-          <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/Cg0XJmRuFzG/" data-instgrm-version="14" style="background:transparent; border:0; margin:0 auto; max-width:420px; width:100%;">
-            <a href="https://www.instagram.com/p/Cg0XJmRuFzG/" target="_blank" rel="noopener noreferrer">Instagram Post</a>
-          </blockquote>
-        </div>
-        <div class="ig-info">
-          <p>Mehr Motive, Flash-Infos und Verfügbarkeiten im Feed und in den Storys. Tippe auf den Beitrag oder folge direkt dem Profil.</p>
-          <div class="ig-grid" aria-label="Instagram Vorschaubilder">
-            <a class="ig-thumb" href="https://instagram.com/jawana.inx" target="_blank" rel="noopener noreferrer"><img src="https://images.unsplash.com/photo-1524504388940-1e1a8c6e0c4c?auto=format&fit=crop&w=400&q=80" alt="Tattoo Vorschau 1" loading="lazy"><span>Feed</span></a>
-            <a class="ig-thumb" href="https://instagram.com/jawana.inx" target="_blank" rel="noopener noreferrer"><img src="https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&w=400&q=80" alt="Tattoo Vorschau 2" loading="lazy"><span>Story</span></a>
-            <a class="ig-thumb" href="https://instagram.com/jawana.inx" target="_blank" rel="noopener noreferrer"><img src="https://images.unsplash.com/photo-1518639192441-8fce0a366e2a?auto=format&fit=crop&w=400&q=80" alt="Tattoo Vorschau 3" loading="lazy"><span>Flash</span></a>
-            <a class="ig-thumb" href="https://instagram.com/jawana.inx" target="_blank" rel="noopener noreferrer"><img src="https://images.unsplash.com/photo-1517840545248-472988babdf9?auto=format&fit=crop&w=400&q=80" alt="Tattoo Vorschau 4" loading="lazy"><span>Detail</span></a>
-          </div>
-          <a class="btn btn-primary" href="https://instagram.com/jawana.inx" target="_blank" rel="noopener noreferrer">Profil @jawana.inx öffnen</a>
-        </div>
-      </div>
     </section>
 
     <section id="about" class="section" aria-labelledby="about-title">
@@ -230,6 +211,20 @@
   <script async src="https://www.instagram.com/embed.js"></script>
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
+    const reveals = document.querySelectorAll('.reveal');
+    if ('IntersectionObserver' in window){
+      const io = new IntersectionObserver(entries=>{
+        entries.forEach(entry=>{
+          if(entry.isIntersecting){
+            entry.target.classList.add('visible');
+            io.unobserve(entry.target);
+          }
+        });
+      },{threshold:0.2});
+      reveals.forEach(el=>io.observe(el));
+    } else {
+      reveals.forEach(el=>el.classList.add('visible'));
+    }
   </script>
 </body>
 </html>
