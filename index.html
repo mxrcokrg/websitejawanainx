@@ -7,103 +7,104 @@
   <meta name="description" content="Moderne Tattoos von Jawana Inx. Feinlinie, Illustration und individuelle Designs. Buchungen und aktueller Feed auf Instagram: @jawana.inx">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
   <style>
     :root{
-      --bg:#0a0a0c;
-      --panel:#11111a;
-      --muted:#a6acb8;
-      --text:#f5f6fb;
-      --accent:#f2c17d;
-      --accent-strong:#ff9b6a;
-      --stroke:rgba(255,255,255,0.06);
+      --bg:#090808;
+      --panel:#111;
+      --panel-strong:#161515;
+      --text:#f1ede5;
+      --muted:#b9ac99;
+      --accent:#c69c6d;
+      --accent-strong:#e0b877;
+      --stroke:rgba(255,255,255,0.08);
+      letter-spacing:0.01em;
       color-scheme: dark;
     }
     *{box-sizing:border-box}
-    html,body{margin:0;padding:0;background:radial-gradient(circle at 20% 20%,rgba(242,193,125,0.12),transparent 30%),radial-gradient(circle at 80% 0%,rgba(255,155,106,0.14),transparent 32%),linear-gradient(135deg,#0a0a0c 0%,#0d0d15 50%,#07070c 100%);color:var(--text);font-family:"Space Grotesk",system-ui,-apple-system,"Segoe UI",sans-serif;min-height:100%}
+    html,body{margin:0;padding:0;min-height:100%;background:radial-gradient(circle at 20% 20%,rgba(198,156,109,0.07),transparent 24%),radial-gradient(circle at 80% 0%,rgba(224,184,119,0.08),transparent 22%),linear-gradient(135deg,#080707 0%,#0b0a0a 40%,#050404 100%);color:var(--text);font-family:"Work Sans",system-ui,-apple-system,"Segoe UI",sans-serif}
     a{color:inherit;text-decoration:none}
 
-    header{position:sticky;top:0;z-index:100;backdrop-filter:blur(18px);background:rgba(10,10,12,0.7);border-bottom:1px solid var(--stroke);}
-    .nav{max-width:1200px;margin:0 auto;padding:1rem 1.25rem;display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap}
-    .brand{display:flex;align-items:center;gap:.8rem}
-    .brand-mark{width:40px;height:40px;border-radius:12px;background:linear-gradient(135deg,var(--accent),var(--accent-strong));display:grid;place-items:center;font-family:"Playfair Display",serif;font-weight:700;color:#0a0a0c;box-shadow:0 10px 30px rgba(242,193,125,0.25)}
-    .brand-text{display:flex;flex-direction:column;line-height:1.2}
-    .brand-title{font-family:"Playfair Display",serif;font-size:1.15rem;letter-spacing:.4px}
+    header{position:sticky;top:0;z-index:50;background:rgba(8,7,7,0.7);backdrop-filter:blur(14px);border-bottom:1px solid var(--stroke)}
+    .nav{max-width:1180px;margin:0 auto;padding:1rem 1.25rem;display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap}
+    .brand{display:flex;align-items:center;gap:.9rem}
+    .brand-mark{width:44px;height:44px;border-radius:12px;background:linear-gradient(135deg,var(--accent),var(--accent-strong));display:grid;place-items:center;font-family:"Cinzel",serif;font-weight:700;color:#0b0a0a;box-shadow:0 10px 24px rgba(198,156,109,0.35);letter-spacing:.05em}
+    .brand-text{line-height:1.2}
+    .brand-title{font-family:"Cinzel",serif;font-size:1.1rem;letter-spacing:.1em;text-transform:uppercase}
     .brand-sub{color:var(--muted);font-size:.95rem}
-    .navlinks{display:flex;gap:.9rem;align-items:center;flex-wrap:wrap}
-    .navlinks a{color:var(--muted);padding:.5rem .75rem;border-radius:999px;border:1px solid transparent;transition:color .25s,border-color .25s,background .25s}
-    .navlinks a:hover{color:var(--text);border-color:var(--stroke);background:rgba(255,255,255,0.03)}
-    .nav-cta{background:linear-gradient(90deg,var(--accent),var(--accent-strong));color:#0a0a0c;font-weight:700;border-radius:999px;padding:.55rem 1rem;box-shadow:0 12px 28px rgba(242,193,125,0.25);}
+    .navlinks{display:flex;gap:.75rem;align-items:center;flex-wrap:wrap}
+    .navlinks a{padding:.55rem .8rem;border-radius:999px;border:1px solid transparent;color:var(--muted);font-weight:600;letter-spacing:.04em;text-transform:uppercase;font-size:.85rem;transition:color .25s,border-color .25s,background .25s}
+    .navlinks a:hover{color:var(--text);border-color:var(--stroke);background:rgba(255,255,255,0.05)}
+    .nav-cta{background:linear-gradient(90deg,var(--accent),var(--accent-strong));color:#0a0a0a;font-weight:700;border-radius:999px;padding:.6rem 1.1rem;box-shadow:0 12px 28px rgba(198,156,109,0.35);text-transform:uppercase;letter-spacing:.08em}
 
-    main{max-width:1200px;margin:0 auto;padding:2rem 1.25rem 3rem;display:flex;flex-direction:column;gap:3rem}
+    main{max-width:1180px;margin:0 auto;padding:2.5rem 1.25rem 3.5rem;display:flex;flex-direction:column;gap:3.5rem}
 
-    /* Hero */
-    .hero{display:grid;grid-template-columns:1.05fr .95fr;gap:2rem;align-items:center;padding:2.4rem;border:1px solid var(--stroke);border-radius:20px;background:linear-gradient(135deg,rgba(255,255,255,0.04),rgba(242,193,125,0.07));box-shadow:0 20px 80px rgba(0,0,0,0.35)}
-    .eyebrow{color:var(--accent);font-weight:600;letter-spacing:.14em;font-size:.85rem;text-transform:uppercase}
-    h1{font-family:"Playfair Display",serif;font-size:2.8rem;margin:.4rem 0;color:var(--text)}
-    .lead{color:var(--muted);font-size:1.05rem;line-height:1.65;max-width:60ch}
-    .hero-actions{display:flex;gap:1rem;flex-wrap:wrap;margin-top:1.25rem}
-    .btn{display:inline-flex;align-items:center;gap:.55rem;padding:.9rem 1.4rem;border-radius:12px;border:1px solid var(--stroke);background:var(--panel);color:var(--text);font-weight:600;transition:transform .2s,box-shadow .3s,background .2s}
-    .btn:hover{transform:translateY(-1px);box-shadow:0 10px 26px rgba(242,193,125,0.25)}
-    .btn-primary{background:linear-gradient(90deg,var(--accent),var(--accent-strong));color:#0a0a0c;border:none}
-    .btn-ghost{background:transparent}
-    .tags{display:flex;gap:.5rem;flex-wrap:wrap;margin-top:1rem}
-    .tag{padding:.45rem .8rem;border-radius:999px;background:rgba(255,255,255,0.06);color:var(--muted);font-size:.9rem;border:1px solid var(--stroke)}
+    .hero{position:relative;overflow:hidden;border:1px solid var(--stroke);border-radius:18px;padding:2.8rem 2.4rem;background:linear-gradient(135deg,rgba(255,255,255,0.02),rgba(198,156,109,0.08));box-shadow:0 20px 80px rgba(0,0,0,0.45);isolation:isolate}
+    .hero::before{content:"";position:absolute;inset:-10%;background:url("https://images.unsplash.com/photo-1515377905703-c4788e51af15?auto=format&fit=crop&w=1500&q=80") center/cover no-repeat;opacity:0.22;filter:grayscale(1);z-index:-2}
+    .hero::after{content:"";position:absolute;inset:0;background:linear-gradient(120deg,rgba(8,7,7,0.85),rgba(8,7,7,0.4) 45%,rgba(8,7,7,0.85));z-index:-1}
+    .hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:2rem;align-items:center}
+    .eyebrow{color:var(--accent-strong);font-weight:700;letter-spacing:.22em;font-size:.82rem;text-transform:uppercase}
+    h1{font-family:"Cinzel",serif;font-size:2.9rem;line-height:1.1;margin:.5rem 0 1rem;letter-spacing:.02em;text-transform:uppercase}
+    .lead{color:var(--muted);font-size:1.05rem;line-height:1.7;max-width:62ch}
+    .hero-actions{display:flex;gap:1rem;flex-wrap:wrap;margin-top:1.35rem}
+    .btn{display:inline-flex;align-items:center;gap:.55rem;padding:.85rem 1.35rem;border-radius:12px;border:1px solid var(--accent);background:transparent;color:var(--text);font-weight:700;letter-spacing:.06em;text-transform:uppercase;transition:transform .2s,box-shadow .3s,background .2s,border-color .2s}
+    .btn:hover{transform:translateY(-2px);box-shadow:0 12px 28px rgba(198,156,109,0.35);background:rgba(198,156,109,0.1)}
+    .btn-primary{background:linear-gradient(90deg,var(--accent),var(--accent-strong));color:#0a0a0a;border:none}
+    .btn-ghost{border-color:var(--stroke)}
+    .tags{display:flex;gap:.55rem;flex-wrap:wrap;margin-top:1.1rem}
+    .tag{padding:.4rem .75rem;border-radius:999px;background:rgba(255,255,255,0.06);color:var(--muted);font-size:.9rem;border:1px solid var(--stroke);letter-spacing:.03em;text-transform:uppercase}
 
-    .hero-visual{position:relative;display:grid;gap:1rem}
-    .hero-visual .panel{background:var(--panel);border:1px solid var(--stroke);border-radius:18px;overflow:hidden;position:relative;box-shadow:0 18px 50px rgba(0,0,0,0.35)}
-    .panel img{width:100%;height:100%;object-fit:cover;display:block;filter:saturate(1.05)}
-    .panel.small{height:150px}
-    .panel.large{height:340px}
-    .pill{position:absolute;right:1rem;bottom:1rem;background:rgba(0,0,0,0.55);border:1px solid var(--stroke);padding:.5rem .9rem;border-radius:999px;color:var(--muted);backdrop-filter:blur(8px);font-weight:600}
+    .hero-card{background:rgba(0,0,0,0.5);border:1px solid var(--stroke);border-radius:14px;padding:1.25rem;backdrop-filter:blur(8px);box-shadow:0 10px 30px rgba(0,0,0,0.4)}
+    .hero-card h3{margin:0 0 .35rem;font-family:"Cinzel",serif;font-size:1.05rem;letter-spacing:.08em;text-transform:uppercase}
+    .hero-card p{margin:0;color:var(--muted);line-height:1.6}
 
-    /* Stats */
-    .stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:1rem}
-    .stat-card{padding:1.1rem 1.25rem;border-radius:14px;border:1px solid var(--stroke);background:rgba(255,255,255,0.03)}
-    .stat-number{font-size:1.6rem;font-weight:700;color:var(--accent)}
-    .stat-label{color:var(--muted)}
+    .stat-strip{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:1rem;margin-top:1.25rem}
+    .stat{padding:1rem 1.1rem;border-radius:14px;border:1px solid var(--stroke);background:var(--panel);text-align:left}
+    .stat-number{font-family:"Cinzel",serif;font-size:1.6rem;font-weight:700;color:var(--accent)}
+    .stat-label{color:var(--muted);text-transform:uppercase;letter-spacing:.07em;font-size:.9rem;margin-top:.2rem}
 
-    /* Portfolio */
-    .section h2{font-family:"Playfair Display",serif;font-size:1.7rem;margin:0 0 .3rem}
-    .section p.lead-small{color:var(--muted);max-width:70ch;margin:.2rem 0 1.4rem}
+    .section{border:1px solid var(--stroke);border-radius:16px;padding:1.9rem 1.6rem;background:var(--panel);box-shadow:0 14px 40px rgba(0,0,0,0.38)}
+    .section h2{font-family:"Cinzel",serif;font-size:1.8rem;margin:0 0 .4rem;letter-spacing:.08em;text-transform:uppercase}
+    .section p.lead-small{color:var(--muted);max-width:72ch;margin:.25rem 0 1.4rem;line-height:1.7}
+
     .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem}
-    .card{border:1px solid var(--stroke);border-radius:16px;overflow:hidden;background:var(--panel);position:relative;box-shadow:0 12px 40px rgba(0,0,0,0.3)}
-    .card img{width:100%;height:100%;object-fit:cover;display:block}
-    .card .meta{position:absolute;left:0;right:0;bottom:0;padding:.75rem .95rem;background:linear-gradient(180deg,transparent,rgba(0,0,0,0.7));color:var(--text);font-weight:600;display:flex;align-items:center;justify-content:space-between;gap:.5rem}
+    .card{border:1px solid var(--stroke);border-radius:14px;overflow:hidden;background:var(--panel-strong);position:relative;box-shadow:0 12px 32px rgba(0,0,0,0.35);transition:transform .25s,box-shadow .25s,border-color .25s}
+    .card img{width:100%;height:100%;object-fit:cover;display:block;filter:saturate(1.08);transition:transform .4s ease,filter .4s ease}
+    .card .meta{position:absolute;left:0;right:0;bottom:0;padding:.75rem .95rem;background:linear-gradient(180deg,transparent,rgba(0,0,0,0.75));color:var(--text);font-weight:700;display:flex;align-items:center;justify-content:space-between;gap:.5rem;text-transform:uppercase;letter-spacing:.05em}
+    .card:hover{transform:translateY(-4px);box-shadow:0 16px 40px rgba(198,156,109,0.2);border-color:rgba(198,156,109,0.5)}
+    .card:hover img{transform:scale(1.05);filter:saturate(1.18)}
     .chip{padding:.35rem .65rem;border-radius:10px;background:rgba(255,255,255,0.08);color:var(--muted);font-size:.85rem;border:1px solid var(--stroke)}
 
-    /* Instagram embed */
-    .ig-block{display:grid;grid-template-columns:1.1fr .9fr;gap:1.5rem;align-items:start;border:1px solid var(--stroke);border-radius:18px;padding:1.4rem 1.6rem;background:linear-gradient(135deg,rgba(255,255,255,0.03),rgba(242,193,125,0.05));box-shadow:0 16px 50px rgba(0,0,0,0.32)}
+    .ig-block{display:grid;grid-template-columns:1.1fr .9fr;gap:1.5rem;align-items:start;border:1px solid var(--stroke);border-radius:14px;padding:1.4rem 1.6rem;background:radial-gradient(circle at 20% 20%,rgba(198,156,109,0.08),transparent 40%),var(--panel-strong);box-shadow:0 16px 40px rgba(0,0,0,0.35)}
     blockquote.instagram-media{margin:0 auto!important;max-width:420px!important;width:100%!important;background:transparent;}
     .ig-info{display:flex;flex-direction:column;gap:.75rem}
-    .ig-info p{margin:0;color:var(--muted);line-height:1.6}
+    .ig-info p{margin:0;color:var(--muted);line-height:1.7}
     .ig-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:.75rem}
-    .ig-thumb{border-radius:12px;overflow:hidden;border:1px solid var(--stroke);background:var(--panel);aspect-ratio:1;position:relative}
-    .ig-thumb img{width:100%;height:100%;object-fit:cover;display:block}
-    .ig-thumb span{position:absolute;right:.5rem;bottom:.5rem;background:rgba(0,0,0,0.55);padding:.3rem .55rem;border-radius:999px;font-size:.8rem;color:var(--text);border:1px solid var(--stroke)}
+    .ig-thumb{border-radius:10px;overflow:hidden;border:1px solid var(--stroke);background:var(--panel);aspect-ratio:1;position:relative;box-shadow:0 10px 24px rgba(0,0,0,0.35)}
+    .ig-thumb img{width:100%;height:100%;object-fit:cover;display:block;filter:saturate(1.1)}
+    .ig-thumb span{position:absolute;right:.45rem;bottom:.45rem;background:rgba(0,0,0,0.55);padding:.3rem .55rem;border-radius:999px;font-size:.78rem;color:var(--text);border:1px solid var(--stroke);letter-spacing:.05em;text-transform:uppercase}
+    .ig-cta{align-self:flex-start}
 
-    /* About & contact */
     .about{display:grid;grid-template-columns:1.05fr .95fr;gap:1.25rem}
-    .panel-text{padding:1.2rem 1.4rem;border:1px solid var(--stroke);border-radius:16px;background:rgba(255,255,255,0.03)}
-    .panel-text h3{margin:0 0 .4rem;font-family:"Playfair Display",serif}
-    .panel-text p{margin:.25rem 0;color:var(--muted);line-height:1.65}
+    .panel-text{padding:1.25rem 1.3rem;border:1px solid var(--stroke);border-radius:14px;background:var(--panel-strong);box-shadow:0 12px 28px rgba(0,0,0,0.32)}
+    .panel-text h3{margin:0 0 .4rem;font-family:"Cinzel",serif;letter-spacing:.06em;text-transform:uppercase}
+    .panel-text p{margin:.25rem 0;color:var(--muted);line-height:1.7}
     .steps{list-style:none;padding:0;margin:.6rem 0 0;display:grid;gap:.6rem}
-    .steps li{padding:.75rem .9rem;border-radius:12px;border:1px solid var(--stroke);background:rgba(255,255,255,0.02);color:var(--muted)}
+    .steps li{padding:.85rem .9rem;border-radius:12px;border:1px solid var(--stroke);background:rgba(255,255,255,0.02);color:var(--muted);letter-spacing:.03em}
 
-    footer{border-top:1px solid var(--stroke);padding:1.5rem 1.25rem 2rem;margin-top:1rem;color:var(--muted);text-align:center;font-size:.95rem}
-    footer a{color:var(--accent)}
+    footer{border-top:1px solid var(--stroke);padding:1.5rem 1.25rem 2rem;margin-top:1rem;color:var(--muted);text-align:center;font-size:.95rem;background:rgba(0,0,0,0.35)}
+    footer a{color:var(--accent);font-weight:600}
 
     @media(max-width:1024px){
-      .hero{grid-template-columns:1fr;}
-      .hero-visual{order:-1}
+      .hero-grid{grid-template-columns:1fr}
       .ig-block{grid-template-columns:1fr}
       .about{grid-template-columns:1fr}
     }
     @media(max-width:640px){
       h1{font-size:2.2rem}
-      .hero{padding:1.6rem}
-      .hero-visual .panel.large{height:260px}
+      .hero{padding:1.8rem}
       header{position:sticky}
+      .navlinks{justify-content:flex-start}
     }
   </style>
 </head>
@@ -128,42 +129,51 @@
 
   <main>
     <section class="hero" aria-labelledby="hero-title">
-      <div>
-        <div class="eyebrow">Tattoo Artist • Fine Line &amp; Illustrativ</div>
-        <h1 id="hero-title">Feinlinige Tattoos mit ruhiger Hand und klarer Vision.</h1>
-        <p class="lead">Jawana entwirft individuelle Motive, die Geschichten tragen: zarte Linien, botanische Formen, illustrative Details. Termine und spontane Flash-Designs findest du am schnellsten auf Instagram.</p>
-        <div class="hero-actions">
-          <a class="btn btn-primary" href="https://instagram.com/jawana.inx" target="_blank" rel="noopener noreferrer">Instagram öffnen</a>
-          <a class="btn btn-ghost" href="#portfolio">Portfolio ansehen</a>
+      <div class="hero-grid">
+        <div>
+          <div class="eyebrow">Fine Line • Blackwork • Illustrativ</div>
+          <h1 id="hero-title">Tattoos mit klarer Linie und mystischem Twist.</h1>
+          <p class="lead">Ruhige Hand, saubere Linien, viel Gefühl für Haut und Komposition. Von zarten Botanicals bis abstrakten Symbolen – hier entstehen Motive, die bleiben.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="https://instagram.com/jawana.inx" target="_blank" rel="noopener noreferrer">Termin anfragen</a>
+            <a class="btn btn-ghost" href="#portfolio">Portfolio</a>
+          </div>
+          <div class="tags">
+            <span class="tag">Custom Pieces</span>
+            <span class="tag">Flash Drops</span>
+            <span class="tag">Healed Shots</span>
+            <span class="tag">Private Studio</span>
+          </div>
+          <div class="stat-strip">
+            <div class="stat">
+              <div class="stat-number">250+</div>
+              <div class="stat-label">gestochene Motive</div>
+            </div>
+            <div class="stat">
+              <div class="stat-number">4.9★</div>
+              <div class="stat-label">Kundenfeedback</div>
+            </div>
+            <div class="stat">
+              <div class="stat-number">Studio</div>
+              <div class="stat-label">Hygiene &amp; Ruhe</div>
+            </div>
+          </div>
         </div>
-        <div class="tags">
-          <span class="tag">Custom Designs</span>
-          <span class="tag">Flash Days</span>
-          <span class="tag">Hygiene zertifiziert</span>
-          <span class="tag">Healed Work</span>
+        <div class="hero-card">
+          <h3>Booking &amp; Location</h3>
+          <p>DM an @jawana.inx mit Motividee, Placement und Größe. Termine nach Verfügbarkeit im privaten Studio – sauber, ruhig, fokussiert.</p>
+          <p>Flash-Designs poste ich zuerst im Story-Highlight. Sichere dir dein Piece per Nachricht.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="https://instagram.com/jawana.inx" target="_blank" rel="noopener noreferrer">DM senden</a>
+            <a class="btn btn-ghost" href="mailto:hi@jawana.inx?subject=Tattoo%20Anfrage">Mail</a>
+          </div>
         </div>
       </div>
-      <div class="hero-visual">
-        <div class="panel large">
-          <img src="https://images.unsplash.com/photo-1504595403659-9088ce801e29?auto=format&fit=crop&w=1200&q=80" alt="Tattoo-Künstlerin bei der Arbeit" loading="lazy">
-          <div class="pill">Feinlinie &amp; Illustration</div>
-        </div>
-        <div class="panel small">
-          <img src="https://images.unsplash.com/photo-1523712999610-f77fbcfc3843?auto=format&fit=crop&w=1200&q=80" alt="Detail eines floralen Tattoos" loading="lazy">
-        </div>
-      </div>
-    </section>
-
-    <section aria-label="Highlights" class="stats">
-      <div class="stat-card"><div class="stat-number">250+</div><div class="stat-label">gestochene Motive</div></div>
-      <div class="stat-card"><div class="stat-number">6k</div><div class="stat-label">Follower auf Instagram</div></div>
-      <div class="stat-card"><div class="stat-number">4.9★</div><div class="stat-label">Feedback von Kund:innen</div></div>
-      <div class="stat-card"><div class="stat-number">Studio</div><div class="stat-label">Hygienisch, privat, relaxed</div></div>
     </section>
 
     <section id="portfolio" class="section" aria-labelledby="portfolio-title">
-      <h2 id="portfolio-title">Ausgewählte Arbeiten</h2>
-      <p class="lead-small">Eine kleine Auswahl aus Custom-Pieces und Flash-Designs. Für mehr healed Shots und neue Motive: @jawana.inx.</p>
+      <h2 id="portfolio-title">Kuratiertes Portfolio</h2>
+      <p class="lead-small">Ein Blick in aktuelle Sessions, feinlinige Kompositionen und healed Shots. Mehr davon täglich im Feed und in den Stories.</p>
       <div class="grid">
         <div class="card"><img src="https://images.unsplash.com/photo-1582719478248-70de130b9c1d?auto=format&fit=crop&w=800&q=80" alt="Filigranes Tattoo am Arm" loading="lazy"><div class="meta"><span>Botanical Flow</span><span class="chip">Fine Line</span></div></div>
         <div class="card"><img src="https://images.unsplash.com/photo-1504595403659-9088ce801e29?auto=format&fit=crop&w=800&q=80" alt="Tattoo Session mit Kunde" loading="lazy"><div class="meta"><span>Session Moment</span><span class="chip">Work in progress</span></div></div>
@@ -197,12 +207,12 @@
     </section>
 
     <section id="about" class="section" aria-labelledby="about-title">
-      <h2 id="about-title">Über Jawana &amp; Booking</h2>
+      <h2 id="about-title">Studio &amp; Booking</h2>
       <div class="about">
         <div class="panel-text">
           <h3>Studio Vibe</h3>
-          <p>Ruhig, clean, respektvoll. Ich arbeite nach strengen Hygienestandards und nehme mir Zeit für jedes Motiv – egal ob Micro-Tattoo oder größere Illustrationen.</p>
-          <p>Bring deine Ideen, Referenzen oder lass dir ein passendes Design entwerfen. Ich liefere Entwürfe vor dem Termin und passe alles an deine Haut an.</p>
+          <p>Privates Setting, sterile Abläufe, genug Zeit für jedes Piece. So entstehen saubere Linien und entspannte Termine.</p>
+          <p>Bring Referenzen oder nur deine Story mit – wir formen daraus ein Motiv, das zu dir passt.</p>
         </div>
         <div class="panel-text">
           <h3>So buchst du</h3>
@@ -212,7 +222,7 @@
             <li>Am Termin: finale Skizze, Placement-Check, dann entspannt stechen.</li>
             <li>Nachsorge-Guides und Pflegehinweise gibt es direkt mit.</li>
           </ul>
-          <div class="hero-actions" style="margin-top:1rem;">
+          <div class="hero-actions">
             <a class="btn btn-primary" href="https://instagram.com/jawana.inx" target="_blank" rel="noopener noreferrer">Nachricht senden</a>
             <a class="btn btn-ghost" href="mailto:hi@jawana.inx?subject=Tattoo%20Anfrage">Alternativ per Mail</a>
           </div>
