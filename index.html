@@ -176,6 +176,108 @@
     .ig-embed-wrapper{
       display:flex;
       justify-content:center;
+      margin:2rem 0;
+    }
+    
+    .ig-profile{
+      background:linear-gradient(135deg,rgba(255,255,255,0.03),rgba(230,184,156,0.05));
+      border:1px solid rgba(230,184,156,0.2);
+      border-radius:16px;
+      padding:2rem;
+      max-width:100%;
+      width:100%;
+      backdrop-filter:blur(10px);
+      box-shadow:0 8px 32px rgba(230,184,156,0.1);
+    }
+    
+    .ig-header{
+      display:flex;
+      align-items:center;
+      gap:1.25rem;
+      margin-bottom:2rem;
+    }
+    
+    .ig-avatar{
+      width:80px;
+      height:80px;
+      border-radius:50%;
+      background:linear-gradient(135deg,var(--accent),var(--accent-dark));
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      font-size:2.5rem;
+      flex-shrink:0;
+      box-shadow:0 4px 15px rgba(230,184,156,0.2);
+    }
+    
+    .ig-info h3{
+      margin:0;
+      font-family:"Playfair Display", serif;
+      font-size:1.3rem;
+      color:#fff;
+    }
+    
+    .ig-info p{
+      margin:0.3rem 0 0;
+      color:var(--muted);
+      font-size:.95rem;
+    }
+    
+    .ig-stats{
+      display:flex;
+      gap:2rem;
+      margin:1.5rem 0;
+      padding:1.5rem 0;
+      border-top:1px solid rgba(230,184,156,0.1);
+      border-bottom:1px solid rgba(230,184,156,0.1);
+    }
+    
+    .ig-stat{
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+    }
+    
+    .ig-stat-number{
+      font-size:1.5rem;
+      font-weight:700;
+      color:var(--accent);
+    }
+    
+    .ig-stat-label{
+      color:var(--muted);
+      font-size:.85rem;
+      margin-top:.3rem;
+    }
+    
+    .ig-bio{
+      color:var(--muted);
+      line-height:1.6;
+      margin:1.5rem 0;
+      font-size:.95rem;
+    }
+    
+    .ig-cta{
+      display:inline-flex;
+      align-items:center;
+      gap:.6rem;
+      padding:.75rem 1.5rem;
+      border-radius:10px;
+      background:linear-gradient(90deg,var(--accent),var(--accent-dark));
+      color:#0a0a0b;
+      font-weight:600;
+      margin-top:1rem;
+      transition:all .3s;
+    }
+    
+    .ig-cta:hover{
+      transform:translateY(-2px);
+      box-shadow:0 8px 20px rgba(230,184,156,0.3);
+    }
+    
+    .ig-icon{
+      width:20px;
+      height:20px;
     }
 
     /* About & Contact */
@@ -267,22 +369,41 @@
       <p class="section-desc">Schau dir meine neuesten Tattoos auf Instagram an. Jedes Stück ist einzigartig und persönlich.</p>
       
       <div class="ig-embed-wrapper">
-        <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/jawana.inx/" data-instgrm-version="14" style="background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);">
-          <div style="padding:16px;"> 
-            <a href="https://www.instagram.com/jawana.inx/" style="background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank" rel="noopener noreferrer">
-              <div style="display: flex; flex-direction: row; align-items: center;">
-                <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div>
-                <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;">
-                  <div style="background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div>
-                  <div style="background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div>
-                </div>
-              </div>
-            </a>
-            <p style="margin:8px 0 0 0; padding:8px 0; color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px;">
-              <a href="https://www.instagram.com/jawana.inx/" style="color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:italic; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank" rel="noopener noreferrer">@jawana.inx</a> · <a href="https://www.instagram.com/jawana.inx/" style="color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:italic; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank" rel="noopener noreferrer">Tattoo-Künstlerin</a>
-            </p>
+        <div class="ig-profile">
+          <div class="ig-header">
+            <div class="ig-avatar">🖤</div>
+            <div class="ig-info">
+              <h3>jawana.inx</h3>
+              <p>Tattoo-Künstlerin</p>
+            </div>
           </div>
-        </blockquote>
+          
+          <div class="ig-stats">
+            <div class="ig-stat">
+              <div class="ig-stat-number">100+</div>
+              <div class="ig-stat-label">Tattoos</div>
+            </div>
+            <div class="ig-stat">
+              <div class="ig-stat-number">5k+</div>
+              <div class="ig-stat-label">Follower</div>
+            </div>
+            <div class="ig-stat">
+              <div class="ig-stat-number">✨</div>
+              <div class="ig-stat-label">Zufrieden</div>
+            </div>
+          </div>
+          
+          <p class="ig-bio">Feinlinige, illustrative und individuelle Tattoos. Mit Herz und Präzision. Termine & Anfragen über Direktnachricht. 🖤</p>
+          
+          <a href="https://instagram.com/jawana.inx" target="_blank" rel="noopener noreferrer" class="ig-cta">
+            <svg class="ig-icon" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.057-1.645.069-4.849.069-3.204 0-3.584-.012-4.849-.069-3.259-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163C8.756 0 8.331.012 7.052.072 2.697.272.273 2.69.073 7.052.012 8.331 0 8.756 0 12c0 3.244.011 3.669.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.061 1.689.072 4.948.072 3.259 0 3.668-.011 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.061-1.28.073-1.689.073-4.948 0-3.259-.012-3.668-.072-4.948-.196-4.354-2.617-6.78-6.979-6.98C15.668.012 15.259 0 12 0z"/>
+              <path d="M12 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8z"/>
+              <circle cx="18.406" cy="5.595" r="1.44"/>
+            </svg>
+            Auf Instagram folgen
+          </a>
+        </div>
       </div>
     </section>
 
@@ -328,8 +449,5 @@
       });
     });
   </script>
-
-  <!-- Instagram Embed Script -->
-  <script async src="https://www.instagram.com/embed.js"></script>
 </body>
 </html>
