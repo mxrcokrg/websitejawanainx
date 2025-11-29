@@ -22,10 +22,16 @@
       color-scheme: dark;
     }
     *{box-sizing:border-box}
-    html,body{margin:0;padding:0;min-height:100%;background:radial-gradient(circle at 20% 20%,rgba(198,156,109,0.07),transparent 24%),radial-gradient(circle at 80% 0%,rgba(224,184,119,0.08),transparent 22%),linear-gradient(135deg,#080707 0%,#0b0a0a 40%,#050404 100%);color:var(--text);font-family:"Work Sans",system-ui,-apple-system,"Segoe UI",sans-serif}
+    html,body{
+      margin:0;padding:0;min-height:100%;
+      background:
+        linear-gradient(135deg,rgba(8,7,7,0.92),rgba(8,7,7,0.82)),
+        url("https://images.unsplash.com/photo-1604908177703-0ac1c9bb646e?auto=format&fit=crop&w=1600&q=80") center/cover fixed no-repeat;
+      color:var(--text);font-family:"Work Sans",system-ui,-apple-system,"Segoe UI",sans-serif
+    }
     a{color:inherit;text-decoration:none}
 
-    header{position:sticky;top:0;z-index:50;background:rgba(8,7,7,0.7);backdrop-filter:blur(14px);border-bottom:1px solid var(--stroke)}
+    header{position:sticky;top:0;z-index:50;background:rgba(8,7,7,0.8);backdrop-filter:blur(14px);border-bottom:1px solid var(--stroke)}
     .nav{max-width:1180px;margin:0 auto;padding:1rem 1.25rem;display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap}
     .brand{display:flex;align-items:center;gap:.9rem}
     .brand-mark{width:44px;height:44px;border-radius:12px;background:linear-gradient(135deg,var(--accent),var(--accent-strong));display:grid;place-items:center;font-family:"Cinzel",serif;font-weight:700;color:#0b0a0a;box-shadow:0 10px 24px rgba(198,156,109,0.35);letter-spacing:.05em}
@@ -39,10 +45,10 @@
 
     main{max-width:1180px;margin:0 auto;padding:2.5rem 1.25rem 3.5rem;display:flex;flex-direction:column;gap:3.5rem}
 
-    .hero{position:relative;overflow:hidden;border:1px solid var(--stroke);border-radius:18px;padding:2.8rem 2.4rem;background:linear-gradient(135deg,rgba(255,255,255,0.02),rgba(198,156,109,0.08));box-shadow:0 20px 80px rgba(0,0,0,0.45);isolation:isolate}
-    .hero::before{content:"";position:absolute;inset:-10%;background:url("https://images.unsplash.com/photo-1515377905703-c4788e51af15?auto=format&fit=crop&w=1500&q=80") center/cover no-repeat;opacity:0.22;filter:grayscale(1);z-index:-2}
-    .hero::after{content:"";position:absolute;inset:0;background:linear-gradient(120deg,rgba(8,7,7,0.85),rgba(8,7,7,0.4) 45%,rgba(8,7,7,0.85));z-index:-1}
-    .hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:2rem;align-items:center}
+    .hero{position:relative;overflow:hidden;border:1px solid var(--stroke);border-radius:18px;padding:2.6rem 2.3rem;background:linear-gradient(135deg,rgba(0,0,0,0.65),rgba(8,7,7,0.85));box-shadow:0 24px 90px rgba(0,0,0,0.55);isolation:isolate}
+    .hero::before{content:"";position:absolute;inset:-20%;background:url("https://images.unsplash.com/photo-1524504388940-1e1a8c6e0c4c?auto=format&fit=crop&w=1800&q=80") center/cover no-repeat;opacity:0.18;filter:grayscale(1);z-index:-2}
+    .hero::after{content:"";position:absolute;inset:0;background:radial-gradient(circle at 25% 20%,rgba(198,156,109,0.28),transparent 42%);z-index:-1}
+    .hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:2rem;align-items:start}
     .eyebrow{color:var(--accent-strong);font-weight:700;letter-spacing:.22em;font-size:.82rem;text-transform:uppercase}
     h1{font-family:"Cinzel",serif;font-size:2.9rem;line-height:1.1;margin:.5rem 0 1rem;letter-spacing:.02em;text-transform:uppercase}
     .lead{color:var(--muted);font-size:1.05rem;line-height:1.7;max-width:62ch}
@@ -54,7 +60,7 @@
     .tags{display:flex;gap:.55rem;flex-wrap:wrap;margin-top:1.1rem}
     .tag{padding:.4rem .75rem;border-radius:999px;background:rgba(255,255,255,0.06);color:var(--muted);font-size:.9rem;border:1px solid var(--stroke);letter-spacing:.03em;text-transform:uppercase}
 
-    .hero-card{background:rgba(0,0,0,0.5);border:1px solid var(--stroke);border-radius:14px;padding:1.25rem;backdrop-filter:blur(8px);box-shadow:0 10px 30px rgba(0,0,0,0.4)}
+    .hero-card{background:rgba(0,0,0,0.55);border:1px solid var(--stroke);border-radius:14px;padding:1.25rem;backdrop-filter:blur(8px);box-shadow:0 10px 30px rgba(0,0,0,0.45)}
     .hero-card h3{margin:0 0 .35rem;font-family:"Cinzel",serif;font-size:1.05rem;letter-spacing:.08em;text-transform:uppercase}
     .hero-card p{margin:0;color:var(--muted);line-height:1.6}
 
@@ -63,27 +69,13 @@
     .stat-number{font-family:"Cinzel",serif;font-size:1.6rem;font-weight:700;color:var(--accent)}
     .stat-label{color:var(--muted);text-transform:uppercase;letter-spacing:.07em;font-size:.9rem;margin-top:.2rem}
 
-    .section{border:1px solid var(--stroke);border-radius:16px;padding:1.9rem 1.6rem;background:var(--panel);box-shadow:0 14px 40px rgba(0,0,0,0.38)}
+    .section{border:1px solid var(--stroke);border-radius:16px;padding:1.9rem 1.6rem;background:rgba(0,0,0,0.65);box-shadow:0 14px 40px rgba(0,0,0,0.48)}
     .section h2{font-family:"Cinzel",serif;font-size:1.8rem;margin:0 0 .4rem;letter-spacing:.08em;text-transform:uppercase}
     .section p.lead-small{color:var(--muted);max-width:72ch;margin:.25rem 0 1.4rem;line-height:1.7}
 
-    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem}
-    .card{border:1px solid var(--stroke);border-radius:14px;overflow:hidden;background:var(--panel-strong);position:relative;box-shadow:0 12px 32px rgba(0,0,0,0.35);transition:transform .25s,box-shadow .25s,border-color .25s}
-    .card img{width:100%;height:100%;object-fit:cover;display:block;filter:saturate(1.08);transition:transform .4s ease,filter .4s ease}
-    .card .meta{position:absolute;left:0;right:0;bottom:0;padding:.75rem .95rem;background:linear-gradient(180deg,transparent,rgba(0,0,0,0.75));color:var(--text);font-weight:700;display:flex;align-items:center;justify-content:space-between;gap:.5rem;text-transform:uppercase;letter-spacing:.05em}
-    .card:hover{transform:translateY(-4px);box-shadow:0 16px 40px rgba(198,156,109,0.2);border-color:rgba(198,156,109,0.5)}
-    .card:hover img{transform:scale(1.05);filter:saturate(1.18)}
-    .chip{padding:.35rem .65rem;border-radius:10px;background:rgba(255,255,255,0.08);color:var(--muted);font-size:.85rem;border:1px solid var(--stroke)}
-
-    .ig-block{display:grid;grid-template-columns:1.1fr .9fr;gap:1.5rem;align-items:start;border:1px solid var(--stroke);border-radius:14px;padding:1.4rem 1.6rem;background:radial-gradient(circle at 20% 20%,rgba(198,156,109,0.08),transparent 40%),var(--panel-strong);box-shadow:0 16px 40px rgba(0,0,0,0.35)}
+    .insta-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1rem}
     blockquote.instagram-media{margin:0 auto!important;max-width:420px!important;width:100%!important;background:transparent;}
-    .ig-info{display:flex;flex-direction:column;gap:.75rem}
-    .ig-info p{margin:0;color:var(--muted);line-height:1.7}
-    .ig-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:.75rem}
-    .ig-thumb{border-radius:10px;overflow:hidden;border:1px solid var(--stroke);background:var(--panel);aspect-ratio:1;position:relative;box-shadow:0 10px 24px rgba(0,0,0,0.35)}
-    .ig-thumb img{width:100%;height:100%;object-fit:cover;display:block;filter:saturate(1.1)}
-    .ig-thumb span{position:absolute;right:.45rem;bottom:.45rem;background:rgba(0,0,0,0.55);padding:.3rem .55rem;border-radius:999px;font-size:.78rem;color:var(--text);border:1px solid var(--stroke);letter-spacing:.05em;text-transform:uppercase}
-    .ig-cta{align-self:flex-start}
+    .ig-note{color:var(--muted);margin-top:.8rem;line-height:1.6}
 
     .about{display:grid;grid-template-columns:1.05fr .95fr;gap:1.25rem}
     .panel-text{padding:1.25rem 1.3rem;border:1px solid var(--stroke);border-radius:14px;background:var(--panel-strong);box-shadow:0 12px 28px rgba(0,0,0,0.32)}
@@ -97,12 +89,11 @@
 
     @media(max-width:1024px){
       .hero-grid{grid-template-columns:1fr}
-      .ig-block{grid-template-columns:1fr}
       .about{grid-template-columns:1fr}
     }
     @media(max-width:640px){
-      h1{font-size:2.2rem}
-      .hero{padding:1.8rem}
+      h1{font-size:2.1rem}
+      .hero{padding:1.7rem}
       header{position:sticky}
       .navlinks{justify-content:flex-start}
     }
@@ -172,16 +163,17 @@
     </section>
 
     <section id="portfolio" class="section" aria-labelledby="portfolio-title">
-      <h2 id="portfolio-title">Kuratiertes Portfolio</h2>
-      <p class="lead-small">Ein Blick in aktuelle Sessions, feinlinige Kompositionen und healed Shots. Mehr davon täglich im Feed und in den Stories.</p>
-      <div class="grid">
-        <div class="card"><img src="https://images.unsplash.com/photo-1582719478248-70de130b9c1d?auto=format&fit=crop&w=800&q=80" alt="Filigranes Tattoo am Arm" loading="lazy"><div class="meta"><span>Botanical Flow</span><span class="chip">Fine Line</span></div></div>
-        <div class="card"><img src="https://images.unsplash.com/photo-1504595403659-9088ce801e29?auto=format&fit=crop&w=800&q=80" alt="Tattoo Session mit Kunde" loading="lazy"><div class="meta"><span>Session Moment</span><span class="chip">Work in progress</span></div></div>
-        <div class="card"><img src="https://images.unsplash.com/photo-1523712999610-f77fbcfc3843?auto=format&fit=crop&w=800&q=80" alt="Blumen Tattoo" loading="lazy"><div class="meta"><span>Floral Lines</span><span class="chip">Custom</span></div></div>
-        <div class="card"><img src="https://images.unsplash.com/photo-1515377905703-c4788e51af15?auto=format&fit=crop&w=800&q=80" alt="Tattoo Komposition" loading="lazy"><div class="meta"><span>Composition</span><span class="chip">Illustrativ</span></div></div>
-        <div class="card"><img src="https://images.unsplash.com/photo-1530023367847-a683933f4177?auto=format&fit=crop&w=800&q=80" alt="Feine Linien" loading="lazy"><div class="meta"><span>Line Story</span><span class="chip">Micro detail</span></div></div>
-        <div class="card"><img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=800&q=80" alt="Minimalistisches Tattoo" loading="lazy"><div class="meta"><span>Minimal Mark</span><span class="chip">Healed</span></div></div>
+      <h2 id="portfolio-title">Direkt aus Instagram</h2>
+      <p class="lead-small">Echte Arbeiten von @jawana.inx – live geladen über den offiziellen Instagram-Embed. Tippe auf die Posts für mehr.</p>
+      <div class="insta-grid">
+        <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DRatLh5iO9h/" data-instgrm-version="14"></blockquote>
+        <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DRO-ZuDiGSK/" data-instgrm-version="14"></blockquote>
+        <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DRjXvAFiBR2/" data-instgrm-version="14"></blockquote>
+        <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DRltx57iHw-/" data-instgrm-version="14"></blockquote>
+        <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DRob9uJiHPV/" data-instgrm-version="14"></blockquote>
+        <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DRCPa8eCN-y/" data-instgrm-version="14"></blockquote>
       </div>
+      <p class="ig-note">Mehr Arbeiten, Flash Drops und Verfügbarkeiten direkt im Feed: <a href="https://instagram.com/jawana.inx" target="_blank" rel="noopener noreferrer">@jawana.inx</a></p>
     </section>
 
     <section id="instagram" class="section" aria-labelledby="instagram-title">
