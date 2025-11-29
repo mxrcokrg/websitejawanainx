@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Jawana Inx — Tattoo Studio</title>
+  <meta name="description" content="Tattoo-Künstlerin Jawana Inx — feinlinige, illustrative und individuelle Tattoos. Termine & Portfolio auf Instagram: @jawana.inx">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0f0f10;
+      --card:#111214;
+      --muted:#9aa0a6;
+      --accent:#e6b89c;
+      --glass: rgba(255,255,255,0.04);
+      color-scheme: dark;
+      color: #e6e6e6;
+      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0;background:linear-gradient(180deg,#070707 0%, #0f0f10 60%);}
+    a{color:inherit;text-decoration:none}
+
+    .skip-link{position:absolute;left:-999px;top:auto;width:1px;height:1px;overflow:hidden}
+    .skip-link:focus{left:1rem;top:1rem;background:var(--card);padding:.5rem 1rem;border-radius:6px}
+
+    header{display:flex;align-items:center;justify-content:space-between;padding:1.25rem 1.5rem;max-width:1200px;margin:0 auto}
+    .brand{display:flex;gap:.75rem;align-items:center}
+    .logo{font-family:"Playfair Display", serif;font-weight:700;font-size:1.25rem;letter-spacing:.4px}
+    nav{display:flex;gap:.75rem;align-items:center}
+    .navlink{color:var(--muted);font-size:.95rem}
+
+    main{max-width:1200px;margin:1rem auto;padding:1rem}
+
+    .hero{display:grid;grid-template-columns:1fr;gap:1.25rem;align-items:center;padding:2rem;border-radius:14px;background:linear-gradient(180deg,rgba(255,255,255,0.02),transparent);box-shadow:0 8px 30px rgba(0,0,0,0.6)}
+    .hero-inner{display:flex;flex-direction:column;gap:1rem}
+    .eyebrow{color:var(--muted);font-size:.875rem}
+    h1{font-family:"Playfair Display", serif;font-size:2.1rem;margin:.1rem 0;color:#fff}
+    p.lead{color:var(--muted);max-width:60ch;font-size:1rem;line-height:1.5}
+
+    .hero-ctas{display:flex;gap:.75rem;flex-wrap:wrap}
+    .btn{display:inline-flex;align-items:center;gap:.6rem;padding:.7rem 1rem;border-radius:10px;background:var(--card);border:1px solid rgba(255,255,255,0.04);cursor:pointer}
+    .btn.primary{background:linear-gradient(90deg,var(--accent),#d68f78);color:#0b0b0b;font-weight:600}
+    .btn.ghost{background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--muted)}
+
+    .hero-media{display:grid;align-items:center;justify-items:center}
+    .hero-art{width:320px;height:320px;border-radius:12px;background:linear-gradient(180deg,#1b1b1c,#0f0f10);display:flex;align-items:center;justify-content:center;color:var(--muted);font-size:.9rem}
+
+    /* Portfolio */
+    .section{margin-top:2.2rem}
+    .section h2{font-size:1.25rem;margin:0 0 .6rem}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}
+    .tile{background:var(--card);border-radius:12px;overflow:hidden;position:relative;aspect-ratio:4/5}
+    .tile img{width:100%;height:100%;object-fit:cover;display:block}
+    .tile .caption{position:absolute;left:0;right:0;bottom:0;padding:.6rem .7rem;background:linear-gradient(180deg,transparent,rgba(0,0,0,0.6));color:#fff;font-size:.9rem}
+
+    /* About & Contact */
+    .cols{display:grid;grid-template-columns:1fr 340px;gap:1rem;align-items:start}
+    .card{background:var(--card);padding:1rem;border-radius:12px}
+    .muted{color:var(--muted)}
+
+    footer{padding:2rem 1rem;text-align:center;color:var(--muted);font-size:.9rem}
+
+    @media (max-width:900px){
+      .grid{grid-template-columns:repeat(2,1fr)}
+      .cols{grid-template-columns:1fr}
+      .hero{grid-template-columns:1fr}
+      .hero-art{width:260px;height:260px}
+    }
+    @media (max-width:520px){
+      h1{font-size:1.6rem}
+      .grid{grid-template-columns:1fr}
+      .hero-art{width:200px;height:200px}
+      header{padding:1rem}
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main">Zum Inhalt</a>
+  <header>
+    <div class="brand">
+      <div class="logo">Jawana Inx</div>
+      <div class="muted">Tattoo • Illustration</div>
+    </div>
+    <nav aria-label="Hauptnavigation">
+      <a class="navlink" href="#portfolio">Portfolio</a>
+      <a class="navlink" href="#about">Über</a>
+      <a class="navlink" href="#contact">Kontakt</a>
+      <a class="navlink" href="https://instagram.com/jawana.inx" target="_blank" rel="noopener noreferrer">@jawana.inx</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-heading">
+      <div class="hero-inner">
+        <div class="eyebrow">Portfoliokünstlerin &amp; Tattoo-Studio</div>
+        <h1 id="hero-heading">Feinlinige, illustrative Tattoos mit Herz und Präzision</h1>
+        <p class="lead">Ich gestalte individuelle Tattoos — von filigranen Linien bis zu intensiven Illustrationen. Termine & Anfragen am schnellsten über Instagram: <strong>@jawana.inx</strong></p>
+
+        <div class="hero-ctas">
+          <a class="btn primary" href="https://instagram.com/jawana.inx" target="_blank" rel="noopener noreferrer" aria-label="Instagram öffnen">Buchen &amp; Anfragen</a>
+          <a class="btn ghost" href="#portfolio" aria-label="Portfolio ansehen">Portfolio ansehen</a>
+        </div>
+      </div>
+
+      <div class="hero-media" aria-hidden="false">
+        <div class="hero-art" role="img" aria-label="Beispiel Tattoo">
+          <!-- Platzhalter: Hier können echte Bilddateien ins Projekt gesetzt werden -->
+          <svg width="180" height="180" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M12 2C13.1046 2 14 2.8954 14 4C14 5.1046 13.1046 6 12 6C10.8954 6 10 5.1046 10 4C10 2.8954 10.8954 2 12 2Z" fill="#c7b39a"/>
+            <path d="M6 20C6 15 9 12 12 12C15 12 18 15 18 20H6Z" fill="#c7b39a"/>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <section id="portfolio" class="section" aria-labelledby="portfolio-heading">
+      <h2 id="portfolio-heading">Ausgewählte Arbeiten</h2>
+      <div class="grid" role="list">
+        <article class="tile" role="listitem" aria-label="Beispiel Tattoo 1">
+          <img src="https://images.unsplash.com/photo-1549888834-3f2c744f4e1a?q=80&w=1200&auto=format&fit=crop&s=placeholder" alt="Feinliniges Blumen-Tattoo am Unterarm">
+          <div class="caption">Feinliniges Blumen-Tattoo</div>
+        </article>
+        <article class="tile" role="listitem" aria-label="Beispiel Tattoo 2">
+          <img src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?q=80&w=1200&auto=format&fit=crop&s=placeholder" alt="Illustratives Schwarzwork auf Schulter">
+          <div class="caption">Illustratives Schwarzwork</div>
+        </article>
+        <article class="tile" role="listitem" aria-label="Beispiel Tattoo 3">
+          <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?q=80&w=1200&auto=format&fit=crop&s=placeholder" alt="Kleines Symbol am Knöchel">
+          <div class="caption">Minimalistische Symbole</div>
+        </article>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <h2>Über mich</h2>
+      <div class="cols">
+        <div class="card">
+          <p class="muted">Hi — ich bin Jawana, tätowiere seit mehreren Jahren und kombiniere Illustration mit präziser Linie. Meine Arbeit legt Wert auf Hygiene, Respekt und ein persönliches Design, das zu dir passt.</p>
+          <ul class="muted">
+            <li>Stil: Feinlinie, Illustration, Blackwork</li>
+            <li>Standort: Auf Anfrage (Terminvergabe digital)</li>
+            <li>Nachsorgehinweise &amp; Pflege: Individuell bei jedem Termin</li>
+          </ul>
+        </div>
+
+        <aside class="card" aria-labelledby="contact">
+          <h3 id="contact">Kontakt &amp; Termine</h3>
+          <p class="muted">Die schnellste &amp; beste Möglichkeit, mich zu erreichen, ist Instagram. Schreibe mir eine Nachricht mit Referenzen und Wunschplatzierung.</p>
+          <p style="margin:0.6rem 0"><a class="btn primary" href="https://instagram.com/jawana.inx" target="_blank" rel="noopener noreferrer">Nachricht auf Instagram</a></p>
+          <p class="muted" style="margin-top:0.6rem;font-size:.9rem">Alternativ kannst du hier eine Anfrage hinterlassen (E-Mail-Adresse oder Formular optional).</p>
+        </aside>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>© <span id="year"></span> Jawana Inx — Tattoos &amp; Illustration · Instagram: <a href="https://instagram.com/jawana.inx" target="_blank" rel="noopener noreferrer">@jawana.inx</a></p>
+    <p class="muted">Diese Seite ist öffentlich und für potenzielle Kundinnen und Kunden geeignet. Bilder sind Platzhalter — ersetze sie durch eigene Fotos, um Urheberrechtsprobleme zu vermeiden.</p>
+  </footer>
+
+  <script>
+    // Kleines Script: aktuelles Jahr und sanftes Scrollen
+    document.getElementById('year').textContent = new Date().getFullYear();
+    // Smooth scroll für interne Links
+    document.querySelectorAll('a[href^="#"]').forEach(a=>{
+      a.addEventListener('click', (e)=>{
+        const href = a.getAttribute('href');
+        if(href.length>1){
+          e.preventDefault();
+          document.querySelector(href).scrollIntoView({behavior:'smooth'});
+        }
+      });
+    });
+  </script>
+</body>
+</html>
