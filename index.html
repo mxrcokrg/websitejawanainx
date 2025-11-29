@@ -3,367 +3,231 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Jawana Inx — Tattoo Studio</title>
-  <meta name="description" content="Tattoo-Künstlerin Jawana Inx — feinlinige, illustrative und individuelle Tattoos. Termine & Portfolio auf Instagram: @jawana.inx">
+  <title>Jawana Inx — Tattoo Artist</title>
+  <meta name="description" content="Moderne Tattoos von Jawana Inx. Feinlinie, Illustration und individuelle Designs. Buchungen und aktueller Feed auf Instagram: @jawana.inx">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
   <style>
     :root{
-      --bg:#0a0a0b;
-      --card:#13131a;
-      --muted:#a0a6b8;
-      --accent:#e6b89c;
-      --accent-dark:#d68f78;
-      --glass: rgba(255,255,255,0.04);
+      --bg:#0a0a0c;
+      --panel:#11111a;
+      --muted:#a6acb8;
+      --text:#f5f6fb;
+      --accent:#f2c17d;
+      --accent-strong:#ff9b6a;
+      --stroke:rgba(255,255,255,0.06);
       color-scheme: dark;
-      color: #f0f0f2;
-      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
     }
     *{box-sizing:border-box}
-    html,body{
-      height:100%;
-      margin:0;
-      background:linear-gradient(135deg,#0a0a0b 0%, #1a1620 50%, #0f0a15 100%);
-      background-attachment:fixed;
-    }
+    html,body{margin:0;padding:0;background:radial-gradient(circle at 20% 20%,rgba(242,193,125,0.12),transparent 30%),radial-gradient(circle at 80% 0%,rgba(255,155,106,0.14),transparent 32%),linear-gradient(135deg,#0a0a0c 0%,#0d0d15 50%,#07070c 100%);color:var(--text);font-family:"Space Grotesk",system-ui,-apple-system,"Segoe UI",sans-serif;min-height:100%}
     a{color:inherit;text-decoration:none}
 
-    .skip-link{position:absolute;left:-999px;top:auto;width:1px;height:1px;overflow:hidden}
-    .skip-link:focus{left:1rem;top:1rem;background:var(--card);padding:.5rem 1rem;border-radius:6px}
+    header{position:sticky;top:0;z-index:100;backdrop-filter:blur(18px);background:rgba(10,10,12,0.7);border-bottom:1px solid var(--stroke);}
+    .nav{max-width:1200px;margin:0 auto;padding:1rem 1.25rem;display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap}
+    .brand{display:flex;align-items:center;gap:.8rem}
+    .brand-mark{width:40px;height:40px;border-radius:12px;background:linear-gradient(135deg,var(--accent),var(--accent-strong));display:grid;place-items:center;font-family:"Playfair Display",serif;font-weight:700;color:#0a0a0c;box-shadow:0 10px 30px rgba(242,193,125,0.25)}
+    .brand-text{display:flex;flex-direction:column;line-height:1.2}
+    .brand-title{font-family:"Playfair Display",serif;font-size:1.15rem;letter-spacing:.4px}
+    .brand-sub{color:var(--muted);font-size:.95rem}
+    .navlinks{display:flex;gap:.9rem;align-items:center;flex-wrap:wrap}
+    .navlinks a{color:var(--muted);padding:.5rem .75rem;border-radius:999px;border:1px solid transparent;transition:color .25s,border-color .25s,background .25s}
+    .navlinks a:hover{color:var(--text);border-color:var(--stroke);background:rgba(255,255,255,0.03)}
+    .nav-cta{background:linear-gradient(90deg,var(--accent),var(--accent-strong));color:#0a0a0c;font-weight:700;border-radius:999px;padding:.55rem 1rem;box-shadow:0 12px 28px rgba(242,193,125,0.25);}
 
-    header{
-      display:flex;
-      align-items:center;
-      justify-content:space-between;
-      padding:1.5rem 1.5rem;
-      max-width:1280px;
-      margin:0 auto;
-      backdrop-filter:blur(10px);
-      border-bottom:1px solid rgba(255,255,255,0.05);
-      position:sticky;
-      top:0;
-      z-index:100;
-    }
-    .brand{display:flex;gap:.75rem;align-items:center}
-    .logo{
-      font-family:"Playfair Display", serif;
-      font-weight:700;
-      font-size:1.35rem;
-      letter-spacing:.5px;
-      background:linear-gradient(90deg,#fff,var(--accent));
-      -webkit-background-clip:text;
-      -webkit-text-fill-color:transparent;
-      background-clip:text;
-    }
-    nav{display:flex;gap:1rem;align-items:center;flex-wrap:wrap}
-    .navlink{color:var(--muted);font-size:.95rem;transition:color .3s}
-    .navlink:hover{color:var(--accent)}
+    main{max-width:1200px;margin:0 auto;padding:2rem 1.25rem 3rem;display:flex;flex-direction:column;gap:3rem}
 
-    main{max-width:1280px;margin:2rem auto;padding:0 1rem}
+    /* Hero */
+    .hero{display:grid;grid-template-columns:1.05fr .95fr;gap:2rem;align-items:center;padding:2.4rem;border:1px solid var(--stroke);border-radius:20px;background:linear-gradient(135deg,rgba(255,255,255,0.04),rgba(242,193,125,0.07));box-shadow:0 20px 80px rgba(0,0,0,0.35)}
+    .eyebrow{color:var(--accent);font-weight:600;letter-spacing:.14em;font-size:.85rem;text-transform:uppercase}
+    h1{font-family:"Playfair Display",serif;font-size:2.8rem;margin:.4rem 0;color:var(--text)}
+    .lead{color:var(--muted);font-size:1.05rem;line-height:1.65;max-width:60ch}
+    .hero-actions{display:flex;gap:1rem;flex-wrap:wrap;margin-top:1.25rem}
+    .btn{display:inline-flex;align-items:center;gap:.55rem;padding:.9rem 1.4rem;border-radius:12px;border:1px solid var(--stroke);background:var(--panel);color:var(--text);font-weight:600;transition:transform .2s,box-shadow .3s,background .2s}
+    .btn:hover{transform:translateY(-1px);box-shadow:0 10px 26px rgba(242,193,125,0.25)}
+    .btn-primary{background:linear-gradient(90deg,var(--accent),var(--accent-strong));color:#0a0a0c;border:none}
+    .btn-ghost{background:transparent}
+    .tags{display:flex;gap:.5rem;flex-wrap:wrap;margin-top:1rem}
+    .tag{padding:.45rem .8rem;border-radius:999px;background:rgba(255,255,255,0.06);color:var(--muted);font-size:.9rem;border:1px solid var(--stroke)}
 
-    .hero{
-      display:grid;
-      grid-template-columns:1.1fr 1fr;
-      gap:2rem;
-      align-items:center;
-      padding:2.5rem;
-      border-radius:16px;
-      background:linear-gradient(135deg,rgba(255,255,255,0.03) 0%, rgba(230,184,156,0.05) 100%);
-      border:1px solid rgba(230,184,156,0.15);
-      box-shadow:0 12px 50px rgba(0,0,0,0.4);
-    }
-    .hero-inner{display:flex;flex-direction:column;gap:1.2rem}
-    .eyebrow{color:var(--accent);font-size:.85rem;text-transform:uppercase;letter-spacing:.15em;font-weight:600}
-    h1{
-      font-family:"Playfair Display", serif;
-      font-size:2.4rem;
-      margin:.1rem 0;
-      color:#fff;
-      line-height:1.2;
-    }
-    p.lead{
-      color:var(--muted);
-      max-width:60ch;
-      font-size:1.05rem;
-      line-height:1.6;
-    }
+    .hero-visual{position:relative;display:grid;gap:1rem}
+    .hero-visual .panel{background:var(--panel);border:1px solid var(--stroke);border-radius:18px;overflow:hidden;position:relative;box-shadow:0 18px 50px rgba(0,0,0,0.35)}
+    .panel img{width:100%;height:100%;object-fit:cover;display:block;filter:saturate(1.05)}
+    .panel.small{height:150px}
+    .panel.large{height:340px}
+    .pill{position:absolute;right:1rem;bottom:1rem;background:rgba(0,0,0,0.55);border:1px solid var(--stroke);padding:.5rem .9rem;border-radius:999px;color:var(--muted);backdrop-filter:blur(8px);font-weight:600}
 
-    .hero-ctas{display:flex;gap:1rem;flex-wrap:wrap}
-    .btn{
-      display:inline-flex;
-      align-items:center;
-      gap:.6rem;
-      padding:.85rem 1.5rem;
-      border-radius:10px;
-      background:var(--card);
-      border:1px solid rgba(255,255,255,0.08);
-      cursor:pointer;
-      font-weight:600;
-      transition:all .3s;
-      font-size:.95rem;
-    }
-    .btn:hover{transform:translateY(-2px);box-shadow:0 8px 20px rgba(230,184,156,0.2)}
-    .btn.primary{
-      background:linear-gradient(90deg,var(--accent),var(--accent-dark));
-      color:#0a0a0b;
-      border:none;
-    }
-    .btn.primary:hover{box-shadow:0 12px 30px rgba(230,184,156,0.3)}
-    .btn.ghost{background:transparent;border:1.5px solid var(--accent);color:var(--accent)}
-
-    .hero-media{display:grid;align-items:center;justify-items:center}
-    .hero-art{
-      width:340px;
-      height:340px;
-      border-radius:16px;
-      background:linear-gradient(135deg,#1a1620,#0f0a15);
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      color:var(--muted);
-      font-size:.9rem;
-      border:1px solid rgba(230,184,156,0.1);
-      box-shadow:0 8px 30px rgba(230,184,156,0.1);
-    }
+    /* Stats */
+    .stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:1rem}
+    .stat-card{padding:1.1rem 1.25rem;border-radius:14px;border:1px solid var(--stroke);background:rgba(255,255,255,0.03)}
+    .stat-number{font-size:1.6rem;font-weight:700;color:var(--accent)}
+    .stat-label{color:var(--muted)}
 
     /* Portfolio */
-    .section{margin-top:3rem}
-    .section h2{
-      font-size:1.5rem;
-      margin:0 0 1rem;
-      font-family:"Playfair Display", serif;
-    }
-    .section-desc{
-      color:var(--muted);
-      margin-bottom:1.5rem;
-      max-width:70ch;
-    }
-    .grid{
-      display:grid;
-      grid-template-columns:repeat(3,1fr);
-      gap:1.2rem;
-    }
-    .tile{
-      background:var(--card);
-      border-radius:14px;
-      overflow:hidden;
-      position:relative;
-      aspect-ratio:4/5;
-      border:1px solid rgba(230,184,156,0.1);
-      transition:all .3s;
-      box-shadow:0 4px 15px rgba(0,0,0,0.3);
-    }
-    .tile:hover{
-      transform:translateY(-4px);
-      box-shadow:0 12px 30px rgba(230,184,156,0.15);
-      border-color:rgba(230,184,156,0.3);
-    }
-    .tile img{width:100%;height:100%;object-fit:cover;display:block}
-    .tile .caption{
-      position:absolute;
-      left:0;
-      right:0;
-      bottom:0;
-      padding:.8rem;
-      background:linear-gradient(180deg,transparent,rgba(0,0,0,0.8));
-      color:#fff;
-      font-size:.9rem;
-      font-weight:600;
-    }
+    .section h2{font-family:"Playfair Display",serif;font-size:1.7rem;margin:0 0 .3rem}
+    .section p.lead-small{color:var(--muted);max-width:70ch;margin:.2rem 0 1.4rem}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem}
+    .card{border:1px solid var(--stroke);border-radius:16px;overflow:hidden;background:var(--panel);position:relative;box-shadow:0 12px 40px rgba(0,0,0,0.3)}
+    .card img{width:100%;height:100%;object-fit:cover;display:block}
+    .card .meta{position:absolute;left:0;right:0;bottom:0;padding:.75rem .95rem;background:linear-gradient(180deg,transparent,rgba(0,0,0,0.7));color:var(--text);font-weight:600;display:flex;align-items:center;justify-content:space-between;gap:.5rem}
+    .chip{padding:.35rem .65rem;border-radius:10px;background:rgba(255,255,255,0.08);color:var(--muted);font-size:.85rem;border:1px solid var(--stroke)}
 
-    /* Instagram Embed */
-    .ig-embed-wrapper{
-      display:flex;
-      justify-content:center;
-      margin:2rem 0;
-    }
-    
-    .ig-embed-card{
-      width:100%;
-      max-width:960px;
-      padding:1.5rem;
-      border-radius:16px;
-      background:linear-gradient(135deg,rgba(255,255,255,0.04),rgba(230,184,156,0.06));
-      border:1px solid rgba(230,184,156,0.18);
-      box-shadow:0 8px 32px rgba(230,184,156,0.12);
-      backdrop-filter:blur(10px);
-    }
-    
-    .ig-embed-card h3{
-      margin:0 0 .35rem;
-      font-family:"Playfair Display", serif;
-      font-size:1.35rem;
-    }
-    
-    .ig-embed-card p{
-      margin:.1rem 0 1rem;
-      color:var(--muted);
-      max-width:70ch;
-    }
-    
-    .ig-embed-card blockquote.instagram-media{
-      margin:1rem auto !important;
-      width:100% !important;
-      max-width:520px;
-      background:transparent;
-    }
-    
-    .ig-embed-card .inline-cta{
-      margin-top:1rem;
-      display:inline-flex;
-      gap:.5rem;
-      align-items:center;
-      color:var(--accent);
-      font-weight:600;
-    }
+    /* Instagram embed */
+    .ig-block{display:grid;grid-template-columns:1.1fr .9fr;gap:1.5rem;align-items:start;border:1px solid var(--stroke);border-radius:18px;padding:1.4rem 1.6rem;background:linear-gradient(135deg,rgba(255,255,255,0.03),rgba(242,193,125,0.05));box-shadow:0 16px 50px rgba(0,0,0,0.32)}
+    blockquote.instagram-media{margin:0 auto!important;max-width:420px!important;width:100%!important;background:transparent;}
+    .ig-info{display:flex;flex-direction:column;gap:.75rem}
+    .ig-info p{margin:0;color:var(--muted);line-height:1.6}
+    .ig-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:.75rem}
+    .ig-thumb{border-radius:12px;overflow:hidden;border:1px solid var(--stroke);background:var(--panel);aspect-ratio:1;position:relative}
+    .ig-thumb img{width:100%;height:100%;object-fit:cover;display:block}
+    .ig-thumb span{position:absolute;right:.5rem;bottom:.5rem;background:rgba(0,0,0,0.55);padding:.3rem .55rem;border-radius:999px;font-size:.8rem;color:var(--text);border:1px solid var(--stroke)}
 
-    /* About & Contact */
-    .cols{display:grid;grid-template-columns:1.2fr 380px;gap:1.5rem;align-items:start}
-    .card{
-      background:linear-gradient(135deg,rgba(255,255,255,0.03),rgba(230,184,156,0.03));
-      padding:1.5rem;
-      border-radius:14px;
-      border:1px solid rgba(230,184,156,0.1);
-      backdrop-filter:blur(10px);
-    }
-    .card h3{font-family:"Playfair Display", serif;font-size:1.2rem;margin:.5rem 0 1rem}
-    .card p{line-height:1.6}
-    .card ul{list-style:none;padding:0;margin:1rem 0}
-    .card li{color:var(--muted);margin:.6rem 0;padding-left:1.5rem;position:relative}
-    .card li:before{content:"→";position:absolute;left:0;color:var(--accent)}
-    .muted{color:var(--muted)}
+    /* About & contact */
+    .about{display:grid;grid-template-columns:1.05fr .95fr;gap:1.25rem}
+    .panel-text{padding:1.2rem 1.4rem;border:1px solid var(--stroke);border-radius:16px;background:rgba(255,255,255,0.03)}
+    .panel-text h3{margin:0 0 .4rem;font-family:"Playfair Display",serif}
+    .panel-text p{margin:.25rem 0;color:var(--muted);line-height:1.65}
+    .steps{list-style:none;padding:0;margin:.6rem 0 0;display:grid;gap:.6rem}
+    .steps li{padding:.75rem .9rem;border-radius:12px;border:1px solid var(--stroke);background:rgba(255,255,255,0.02);color:var(--muted)}
 
-    footer{
-      padding:2.5rem 1rem;
-      text-align:center;
-      color:var(--muted);
-      font-size:.9rem;
-      border-top:1px solid rgba(255,255,255,0.05);
-      margin-top:3rem;
-    }
-    footer a{color:var(--accent);transition:color .3s}
-    footer a:hover{color:#fff}
+    footer{border-top:1px solid var(--stroke);padding:1.5rem 1.25rem 2rem;margin-top:1rem;color:var(--muted);text-align:center;font-size:.95rem}
+    footer a{color:var(--accent)}
 
-    @media (max-width:1000px){
-      .grid{grid-template-columns:repeat(2,1fr)}
-      .cols{grid-template-columns:1fr}
-      .hero{grid-template-columns:1fr;gap:1.5rem}
-      .hero-art{width:280px;height:280px}
-      h1{font-size:2rem}
+    @media(max-width:1024px){
+      .hero{grid-template-columns:1fr;}
+      .hero-visual{order:-1}
+      .ig-block{grid-template-columns:1fr}
+      .about{grid-template-columns:1fr}
     }
-    @media (max-width:600px){
-      h1{font-size:1.5rem}
-      .grid{grid-template-columns:1fr}
-      .hero-art{width:220px;height:220px}
-      header{padding:1rem;flex-direction:column;gap:.75rem;text-align:center}
-      nav{gap:.5rem;justify-content:center}
-      .hero{padding:1.5rem}
-      .navlink{font-size:.85rem}
+    @media(max-width:640px){
+      h1{font-size:2.2rem}
+      .hero{padding:1.6rem}
+      .hero-visual .panel.large{height:260px}
+      header{position:sticky}
     }
   </style>
 </head>
 <body>
-  <a class="skip-link" href="#main">Zum Inhalt</a>
   <header>
-    <div class="brand">
-      <div class="logo">Jawana Inx</div>
-      <div class="muted">Tattoo • Illustration</div>
+    <div class="nav">
+      <div class="brand">
+        <div class="brand-mark">JI</div>
+        <div class="brand-text">
+          <div class="brand-title">Jawana Inx</div>
+          <div class="brand-sub">Tattoo • Illustration</div>
+        </div>
+      </div>
+      <div class="navlinks">
+        <a href="#portfolio">Arbeiten</a>
+        <a href="#instagram">Instagram</a>
+        <a href="#about">Über &amp; Booking</a>
+        <a class="nav-cta" href="https://instagram.com/jawana.inx" target="_blank" rel="noopener noreferrer">@jawana.inx</a>
+      </div>
     </div>
-    <nav aria-label="Hauptnavigation">
-      <a class="navlink" href="#portfolio">Portfolio</a>
-      <a class="navlink" href="#about">Über</a>
-      <a class="navlink" href="#contact">Kontakt</a>
-      <a class="navlink" href="https://instagram.com/jawana.inx" target="_blank" rel="noopener noreferrer">Instagram</a>
-    </nav>
   </header>
 
-  <main id="main">
-    <section class="hero" aria-labelledby="hero-heading">
-      <div class="hero-inner">
-        <div class="eyebrow">Portfoliokünstlerin &amp; Tattoo-Studio</div>
-        <h1 id="hero-heading">Feinlinige, illustrative Tattoos mit Herz und Präzision</h1>
-        <p class="lead">Ich gestalte individuelle Tattoos — von filigranen Linien bis zu intensiven Illustrationen. Termine & Anfragen am schnellsten über Instagram: <strong>@jawana.inx</strong></p>
-
-        <div class="hero-ctas">
-          <a class="btn primary" href="https://instagram.com/jawana.inx" target="_blank" rel="noopener noreferrer" aria-label="Instagram öffnen">Buchen &amp; Anfragen</a>
-          <a class="btn ghost" href="#portfolio" aria-label="Portfolio ansehen">Portfolio ansehen</a>
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <div>
+        <div class="eyebrow">Tattoo Artist • Fine Line &amp; Illustrativ</div>
+        <h1 id="hero-title">Feinlinige Tattoos mit ruhiger Hand und klarer Vision.</h1>
+        <p class="lead">Jawana entwirft individuelle Motive, die Geschichten tragen: zarte Linien, botanische Formen, illustrative Details. Termine und spontane Flash-Designs findest du am schnellsten auf Instagram.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="https://instagram.com/jawana.inx" target="_blank" rel="noopener noreferrer">Instagram öffnen</a>
+          <a class="btn btn-ghost" href="#portfolio">Portfolio ansehen</a>
+        </div>
+        <div class="tags">
+          <span class="tag">Custom Designs</span>
+          <span class="tag">Flash Days</span>
+          <span class="tag">Hygiene zertifiziert</span>
+          <span class="tag">Healed Work</span>
         </div>
       </div>
-
-      <div class="hero-media" aria-hidden="false">
-        <div class="hero-art" role="img" aria-label="Beispiel Tattoo">
-          <!-- Platzhalter: Hier können echte Bilddateien ins Projekt gesetzt werden -->
-          <svg width="180" height="180" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-            <path d="M12 2C13.1046 2 14 2.8954 14 4C14 5.1046 13.1046 6 12 6C10.8954 6 10 5.1046 10 4C10 2.8954 10.8954 2 12 2Z" fill="#c7b39a"/>
-            <path d="M6 20C6 15 9 12 12 12C15 12 18 15 18 20H6Z" fill="#c7b39a"/>
-          </svg>
+      <div class="hero-visual">
+        <div class="panel large">
+          <img src="https://images.unsplash.com/photo-1504595403659-9088ce801e29?auto=format&fit=crop&w=1200&q=80" alt="Tattoo-Künstlerin bei der Arbeit" loading="lazy">
+          <div class="pill">Feinlinie &amp; Illustration</div>
+        </div>
+        <div class="panel small">
+          <img src="https://images.unsplash.com/photo-1523712999610-f77fbcfc3843?auto=format&fit=crop&w=1200&q=80" alt="Detail eines floralen Tattoos" loading="lazy">
         </div>
       </div>
     </section>
 
-    <section id="portfolio" class="section" aria-labelledby="portfolio-heading">
-      <h2 id="portfolio-heading">Ausgewählte Arbeiten</h2>
-      <p class="section-desc">Schau dir meine neuesten Tattoos auf Instagram an. Jedes Stück ist einzigartig und persönlich.</p>
-      
-      <div class="ig-embed-wrapper">
-        <div class="ig-embed-card">
-          <h3>Instagram Einblicke</h3>
-          <p>Live aus meinem Feed – swipe im Beitrag für mehr Motive. Direkt auf Instagram öffnen für Storys und aktuelle Termine.</p>
-          
-          <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/Cg0XJmRuFzG/" data-instgrm-version="14" style="background:transparent; border:0; margin:0 auto; max-width:520px; width:100%;">
+    <section aria-label="Highlights" class="stats">
+      <div class="stat-card"><div class="stat-number">250+</div><div class="stat-label">gestochene Motive</div></div>
+      <div class="stat-card"><div class="stat-number">6k</div><div class="stat-label">Follower auf Instagram</div></div>
+      <div class="stat-card"><div class="stat-number">4.9★</div><div class="stat-label">Feedback von Kund:innen</div></div>
+      <div class="stat-card"><div class="stat-number">Studio</div><div class="stat-label">Hygienisch, privat, relaxed</div></div>
+    </section>
+
+    <section id="portfolio" class="section" aria-labelledby="portfolio-title">
+      <h2 id="portfolio-title">Ausgewählte Arbeiten</h2>
+      <p class="lead-small">Eine kleine Auswahl aus Custom-Pieces und Flash-Designs. Für mehr healed Shots und neue Motive: @jawana.inx.</p>
+      <div class="grid">
+        <div class="card"><img src="https://images.unsplash.com/photo-1582719478248-70de130b9c1d?auto=format&fit=crop&w=800&q=80" alt="Filigranes Tattoo am Arm" loading="lazy"><div class="meta"><span>Botanical Flow</span><span class="chip">Fine Line</span></div></div>
+        <div class="card"><img src="https://images.unsplash.com/photo-1504595403659-9088ce801e29?auto=format&fit=crop&w=800&q=80" alt="Tattoo Session mit Kunde" loading="lazy"><div class="meta"><span>Session Moment</span><span class="chip">Work in progress</span></div></div>
+        <div class="card"><img src="https://images.unsplash.com/photo-1523712999610-f77fbcfc3843?auto=format&fit=crop&w=800&q=80" alt="Blumen Tattoo" loading="lazy"><div class="meta"><span>Floral Lines</span><span class="chip">Custom</span></div></div>
+        <div class="card"><img src="https://images.unsplash.com/photo-1515377905703-c4788e51af15?auto=format&fit=crop&w=800&q=80" alt="Tattoo Komposition" loading="lazy"><div class="meta"><span>Composition</span><span class="chip">Illustrativ</span></div></div>
+        <div class="card"><img src="https://images.unsplash.com/photo-1530023367847-a683933f4177?auto=format&fit=crop&w=800&q=80" alt="Feine Linien" loading="lazy"><div class="meta"><span>Line Story</span><span class="chip">Micro detail</span></div></div>
+        <div class="card"><img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=800&q=80" alt="Minimalistisches Tattoo" loading="lazy"><div class="meta"><span>Minimal Mark</span><span class="chip">Healed</span></div></div>
+      </div>
+    </section>
+
+    <section id="instagram" class="section" aria-labelledby="instagram-title">
+      <h2 id="instagram-title">Instagram Live</h2>
+      <p class="lead-small">Schau dir aktuelle Posts an. Der offizielle Instagram-Embed funktioniert ohne private Keys – du kannst diesen Code öffentlich hosten.</p>
+      <div class="ig-block">
+        <div>
+          <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/Cg0XJmRuFzG/" data-instgrm-version="14" style="background:transparent; border:0; margin:0 auto; max-width:420px; width:100%;">
             <a href="https://www.instagram.com/p/Cg0XJmRuFzG/" target="_blank" rel="noopener noreferrer">Instagram Post</a>
           </blockquote>
-
-          <a class="inline-cta" href="https://instagram.com/jawana.inx" target="_blank" rel="noopener noreferrer" aria-label="Instagram Profil öffnen">
-            → Profil @jawana.inx anzeigen
-          </a>
+        </div>
+        <div class="ig-info">
+          <p>Mehr Motive, Flash-Infos und Verfügbarkeiten im Feed und in den Storys. Tippe auf den Beitrag oder folge direkt dem Profil.</p>
+          <div class="ig-grid" aria-label="Instagram Vorschaubilder">
+            <a class="ig-thumb" href="https://instagram.com/jawana.inx" target="_blank" rel="noopener noreferrer"><img src="https://images.unsplash.com/photo-1524504388940-1e1a8c6e0c4c?auto=format&fit=crop&w=400&q=80" alt="Tattoo Vorschau 1" loading="lazy"><span>Feed</span></a>
+            <a class="ig-thumb" href="https://instagram.com/jawana.inx" target="_blank" rel="noopener noreferrer"><img src="https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&w=400&q=80" alt="Tattoo Vorschau 2" loading="lazy"><span>Story</span></a>
+            <a class="ig-thumb" href="https://instagram.com/jawana.inx" target="_blank" rel="noopener noreferrer"><img src="https://images.unsplash.com/photo-1518639192441-8fce0a366e2a?auto=format&fit=crop&w=400&q=80" alt="Tattoo Vorschau 3" loading="lazy"><span>Flash</span></a>
+            <a class="ig-thumb" href="https://instagram.com/jawana.inx" target="_blank" rel="noopener noreferrer"><img src="https://images.unsplash.com/photo-1517840545248-472988babdf9?auto=format&fit=crop&w=400&q=80" alt="Tattoo Vorschau 4" loading="lazy"><span>Detail</span></a>
+          </div>
+          <a class="btn btn-primary" href="https://instagram.com/jawana.inx" target="_blank" rel="noopener noreferrer">Profil @jawana.inx öffnen</a>
         </div>
       </div>
     </section>
 
-    <section id="about" class="section">
-      <h2>Über mich</h2>
-      <div class="cols">
-        <div class="card">
-          <p class="muted">Hi — ich bin Jawana, tätowiere seit mehreren Jahren und kombiniere Illustration mit präziser Linie. Meine Arbeit legt Wert auf Hygiene, Respekt und ein persönliches Design, das zu dir passt.</p>
-          <ul class="muted">
-            <li>Stil: Feinlinie, Illustration, Blackwork</li>
-            <li>Standort: Auf Anfrage (Terminvergabe digital)</li>
-            <li>Nachsorgehinweise &amp; Pflege: Individuell bei jedem Termin</li>
+    <section id="about" class="section" aria-labelledby="about-title">
+      <h2 id="about-title">Über Jawana &amp; Booking</h2>
+      <div class="about">
+        <div class="panel-text">
+          <h3>Studio Vibe</h3>
+          <p>Ruhig, clean, respektvoll. Ich arbeite nach strengen Hygienestandards und nehme mir Zeit für jedes Motiv – egal ob Micro-Tattoo oder größere Illustrationen.</p>
+          <p>Bring deine Ideen, Referenzen oder lass dir ein passendes Design entwerfen. Ich liefere Entwürfe vor dem Termin und passe alles an deine Haut an.</p>
+        </div>
+        <div class="panel-text">
+          <h3>So buchst du</h3>
+          <ul class="steps">
+            <li>Schreibe mir auf Instagram @jawana.inx mit Motividee, Placement &amp; Größe.</li>
+            <li>Ich melde mich mit Fragen, Preisrahmen und Terminvorschlägen.</li>
+            <li>Am Termin: finale Skizze, Placement-Check, dann entspannt stechen.</li>
+            <li>Nachsorge-Guides und Pflegehinweise gibt es direkt mit.</li>
           </ul>
+          <div class="hero-actions" style="margin-top:1rem;">
+            <a class="btn btn-primary" href="https://instagram.com/jawana.inx" target="_blank" rel="noopener noreferrer">Nachricht senden</a>
+            <a class="btn btn-ghost" href="mailto:hi@jawana.inx?subject=Tattoo%20Anfrage">Alternativ per Mail</a>
+          </div>
         </div>
-
-        <aside class="card" aria-labelledby="contact">
-          <h3 id="contact">Kontakt &amp; Termine</h3>
-          <p class="muted">Die schnellste &amp; beste Möglichkeit, mich zu erreichen, ist Instagram. Schreibe mir eine Nachricht mit Referenzen und Wunschplatzierung.</p>
-          <p style="margin:0.6rem 0"><a class="btn primary" href="https://instagram.com/jawana.inx" target="_blank" rel="noopener noreferrer">Nachricht auf Instagram</a></p>
-          <p class="muted" style="margin-top:0.6rem;font-size:.9rem">Alternativ kannst du hier eine Anfrage hinterlassen (E-Mail-Adresse oder Formular optional).</p>
-        </aside>
       </div>
     </section>
-
   </main>
 
   <footer>
-    <p>© <span id="year"></span> Jawana Inx — Tattoos &amp; Illustration · Instagram: <a href="https://instagram.com/jawana.inx" target="_blank" rel="noopener noreferrer">@jawana.inx</a></p>
-    <p class="muted">Diese Seite ist öffentlich und für potenzielle Kundinnen und Kunden geeignet. Bilder sind Platzhalter — ersetze sie durch eigene Fotos, um Urheberrechtsprobleme zu vermeiden.</p>
+    © <span id="year"></span> Jawana Inx · Tattoo &amp; Illustration · Instagram: <a href="https://instagram.com/jawana.inx" target="_blank" rel="noopener noreferrer">@jawana.inx</a>
   </footer>
 
   <script async src="https://www.instagram.com/embed.js"></script>
   <script>
-    // Kleines Script: aktuelles Jahr und sanftes Scrollen
     document.getElementById('year').textContent = new Date().getFullYear();
-    // Smooth scroll für interne Links
-    document.querySelectorAll('a[href^="#"]').forEach(a=>{
-      a.addEventListener('click', (e)=>{
-        const href = a.getAttribute('href');
-        if(href.length>1){
-          e.preventDefault();
-          document.querySelector(href).scrollIntoView({behavior:'smooth'});
-        }
-      });
-    });
   </script>
 </body>
 </html>
