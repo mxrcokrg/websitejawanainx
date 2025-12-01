@@ -35,8 +35,7 @@
       font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
       background:
         linear-gradient(180deg, rgba(4,4,6,0.82), rgba(4,4,6,0.92)),
-        radial-gradient(circle at top left, #262633 0, #060608 45%, #050507 100%),
-        url("https://mxrcokrg.github.io/websitejawanainx/images/IMG_2935.jpeg") center/cover fixed no-repeat;
+        radial-gradient(circle at top left, #262633 0, #060608 45%, #050507 100%);
       color: var(--text);
       line-height: 1.6;
       -webkit-font-smoothing: antialiased;
@@ -540,6 +539,17 @@
       color: #f4f2ee;
     }
 
+    /* Scroll reveal */
+    .reveal {
+      opacity: 0;
+      transform: translateY(24px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
     /* Info / Contact */
 
     .info-grid {
@@ -820,21 +830,22 @@
       </div>
 
       <div class="gallery-grid">
-        <div class="gallery-item">
+        <div class="gallery-item reveal">
           <img src="https://mxrcokrg.github.io/websitejawanainx/images/DSCF1664.jpeg" alt="Ich tätowiere konzentriert an einem Rückenmotiv." />
           <span>Beim Tätowieren</span>
         </div>
-        <div class="gallery-item">
+        <div class="gallery-item reveal">
           <img src="https://mxrcokrg.github.io/websitejawanainx/images/DSCF2061.JPG" alt="Ich bereite den Arm eines Kunden auf ein Tattoo vor." />
           <span>Vorbereitung</span>
         </div>
-        <div class="gallery-item">
+        <div class="gallery-item reveal">
           <img src="https://mxrcokrg.github.io/websitejawanainx/images/DSCF2262.JPG" alt="Ich mit Mütze im Gespräch im Studio." />
           <span>Studio-Moment</span>
         </div>
-        <div class="gallery-item">
-          <img src="https://mxrcokrg.github.io/websitejawanainx/images/IMG_2935.jpeg" alt="Ich im Studio." />
-          <span>Studio-Moment</span>
+        <div class="gallery-item reveal">
+          <img src="https://mxrcokrg.github.io/websitejawanainx/images/IMG_3129.jpeg" alt="Portrait von mir, tätowiert und gut gelaunt." />
+          <span>Portrait</span>
+        </div>
       </div>
 
       <p class="section-note">
@@ -853,51 +864,51 @@
       </div>
 
       <div class="portfolio-grid">
-        <div class="portfolio-card">
+        <div class="portfolio-card reveal">
           <span class="portfolio-badge">Vase</span>
           <img src="https://mxrcokrg.github.io/websitejawanainx/images/Facetune_14-11-2025-18-05-40.jpeg" alt="Feine Linienführung bei einem zarten Motiv." />
         </div>
-        <div class="portfolio-card">
+        <div class="portfolio-card reveal">
           <span class="portfolio-badge">Schildkröte</span>
           <img src="https://mxrcokrg.github.io/websitejawanainx/images/IMG_3232.jpeg" alt="Schildkröte" />
         </div>
-        <div class="portfolio-card">
+        <div class="portfolio-card reveal">
           <span class="portfolio-badge">Fadenkreuz</span>
           <img src="https://mxrcokrg.github.io/websitejawanainx/images/IMG_2647.jpeg" alt="Minimalistisches Tattoo mit klaren Konturen." />
         </div>
-        <div class="portfolio-card">
+        <div class="portfolio-card reveal">
           <span class="portfolio-badge">Muschel</span>
           <img src="https://mxrcokrg.github.io/websitejawanainx/images/IMG_2736.jpeg" alt="Schwarz arbeitendes Motiv mit Linien und Flächen." />
         </div>
-        <div class="portfolio-card">
+        <div class="portfolio-card reveal">
           <span class="portfolio-badge">Pflanze</span>
           <img src="https://mxrcokrg.github.io/websitejawanainx/images/IMG_4788.jpeg" alt="Feines Tattoo mit schmalen Linien." />
         </div>
-        <div class="portfolio-card">
+        <div class="portfolio-card reveal">
           <span class="portfolio-badge">Fledermaus</span>
           <img src="https://mxrcokrg.github.io/websitejawanainx/images/IMG_2791_polarr.jpeg" alt="Fledermaus" />
         </div>
-        <div class="portfolio-card">
+        <div class="portfolio-card reveal">
           <span class="portfolio-badge">Auge</span>
           <img src="https://mxrcokrg.github.io/websitejawanainx/images/IMG_3129.jpeg" alt="Auge" />
         </div>
-        <div class="portfolio-card">
+        <div class="portfolio-card reveal">
           <span class="portfolio-badge">It´s Okay</span>
           <img src="https://mxrcokrg.github.io/websitejawanainx/images/C5169F18-C4A9-4C17-AC10-DE010559BFE7.jpeg" alt="Minimalistisches Tattoo mit feinen Konturen." />
         </div>
-        <div class="portfolio-card">
+        <div class="portfolio-card reveal">
           <span class="portfolio-badge">Hund</span>
           <img src="https://mxrcokrg.github.io/websitejawanainx/images/FullSizeRender.jpeg" alt="Hund mit Stachelhalsband" />
         </div>
-        <div class="portfolio-card">
+        <div class="portfolio-card reveal">
           <span class="portfolio-badge">Puma</span>
           <img src="https://mxrcokrg.github.io/websitejawanainx/images/IMG_4606.jpeg" alt="Tattoo mit betonten Linien." />
         </div>
-        <div class="portfolio-card">
+        <div class="portfolio-card reveal">
           <span class="portfolio-badge">Schmetterling</span>
           <img src="https://mxrcokrg.github.io/websitejawanainx/images/IMG_4821.jpeg" alt="Schmetterling abstrakt." />
         </div>
-        <div class="portfolio-card">
+        <div class="portfolio-card reveal">
           <span class="portfolio-badge">1997 + Kranz</span>
           <img src="https://mxrcokrg.github.io/websitejawanainx/images/IMG_3614.jpeg" alt="1997 mit Kranz." />
         </div>
@@ -980,6 +991,22 @@
     document.getElementById("year").textContent = new Date().getFullYear();
     // Smooth Scrolling (optional, funktioniert in modernen Browsern auch via CSS)
     document.documentElement.style.scrollBehavior = "smooth";
+
+    // Reveal-Effekt für Bilder beim Scrollen
+    const revealItems = document.querySelectorAll(".reveal");
+    if ("IntersectionObserver" in window) {
+      const io = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+            io.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.2 });
+      revealItems.forEach((el) => io.observe(el));
+    } else {
+      revealItems.forEach((el) => el.classList.add("visible"));
+    }
   </script>
 </body>
 </html>
