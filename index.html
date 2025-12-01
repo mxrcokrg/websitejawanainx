@@ -33,7 +33,10 @@
 
     body {
       font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
-      background: radial-gradient(circle at top left, #262633 0, #060608 45%, #050507 100%);
+      background:
+        linear-gradient(180deg, rgba(4,4,6,0.82), rgba(4,4,6,0.92)),
+        radial-gradient(circle at top left, #262633 0, #060608 45%, #050507 100%),
+        url("https://mxrcokrg.github.io/websitejawanainx/images/IMG_2935.jpeg") center/cover fixed no-repeat;
       color: var(--text);
       line-height: 1.6;
       -webkit-font-smoothing: antialiased;
@@ -425,7 +428,7 @@
 
     .gallery-grid {
       display: grid;
-      grid-template-columns: repeat(12, minmax(0, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
       gap: 0.9rem;
     }
 
@@ -436,6 +439,7 @@
       border: 1px solid rgba(255,255,255,0.03);
       position: relative;
       isolation: isolate;
+      aspect-ratio: 4/5;
     }
 
     .gallery-item img {
@@ -477,21 +481,6 @@
     .gallery-item:hover span {
       opacity: 1;
       transform: translateY(0);
-    }
-
-    .gallery-item.large {
-      grid-column: span 7;
-      aspect-ratio: 4/3;
-    }
-
-    .gallery-item.tall {
-      grid-column: span 5;
-      aspect-ratio: 3/4;
-    }
-
-    .gallery-item.small {
-      grid-column: span 4;
-      aspect-ratio: 3/4;
     }
 
     .section-note {
@@ -831,17 +820,21 @@
       </div>
 
       <div class="gallery-grid">
-        <div class="gallery-item large">
+        <div class="gallery-item">
           <img src="https://mxrcokrg.github.io/websitejawanainx/images/DSCF1664.jpeg" alt="Ich tätowiere konzentriert an einem Rückenmotiv." />
           <span>Beim Tätowieren</span>
         </div>
-        <div class="gallery-item tall">
+        <div class="gallery-item">
           <img src="https://mxrcokrg.github.io/websitejawanainx/images/DSCF2061.JPG" alt="Ich bereite den Arm eines Kunden auf ein Tattoo vor." />
           <span>Vorbereitung</span>
         </div>
-        <div class="gallery-item small">
+        <div class="gallery-item">
           <img src="https://mxrcokrg.github.io/websitejawanainx/images/DSCF2262.JPG" alt="Ich mit Mütze im Gespräch im Studio." />
           <span>Studio-Moment</span>
+        </div>
+        <div class="gallery-item">
+          <img src="https://mxrcokrg.github.io/websitejawanainx/images/IMG_3129.jpeg" alt="Portrait von mir, tätowiert und gut gelaunt." />
+          <span>Portrait</span>
         </div>
       </div>
 
