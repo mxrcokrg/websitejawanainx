@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Impressum | jawanainx</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0d0e12;
+      --panel: rgba(18,19,25,0.88);
+      --text: #f2f4f8;
+      --muted: #a3acb7;
+      --accent: #ff9f7a;
+      --border: #20232b;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+      background: radial-gradient(circle at top left, #1e1f29 0, #090a0f 45%, #050507 100%);
+      color: var(--text);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem 1.25rem;
+    }
+    .card {
+      width: min(720px, 100%);
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 1.75rem 1.6rem;
+      box-shadow: 0 18px 45px rgba(0,0,0,0.45);
+    }
+    h1 { font-size: 1.6rem; margin-bottom: 0.6rem; letter-spacing: 0.03em; }
+    p { margin: 0.2rem 0; color: var(--muted); line-height: 1.6; }
+    .section { margin-top: 1.2rem; }
+    .label { color: var(--accent); font-weight: 600; letter-spacing: 0.04em; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>Impressum</h1>
+    <p class="label">Anbieter gemäß § 5 TMG</p>
+    <p>Johanna Breundig</p>
+    <p>White Lotus Tattoocollective</p>
+    <p>Maingasse 4</p>
+    <p>97877 Wertheim</p>
+
+    <div class="section">
+      <p class="label">Kontakt</p>
+      <p>Instagram: <a href="https://www.instagram.com/jawanainx" target="_blank" rel="noopener">instagram.com/jawanainx</a></p>
+    </div>
+
+    <div class="section">
+      <p><a href="index.html">Zurück zur Startseite</a></p>
+    </div>
+  </div>
+</body>
+</html>
