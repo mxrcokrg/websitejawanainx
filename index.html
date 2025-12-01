@@ -1,203 +1,865 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Jawana Inx — Tattoo Artist</title>
-  <meta name="description" content="Moderne Tattoos von Jawana Inx. Feinlinie, Illustration und individuelle Designs. Buchungen und aktueller Feed auf Instagram: @jawana.inx">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Johanna – Tattoo Artist in Ausbildung | jawanainx</title>
+  <meta name="description" content="Johanna (jawanainx) – angehende Tattoo Artist. Feine, detaillierte Tattoos in entspannter Atmosphäre. Termin- & Motiv-Anfragen per Instagram." />
+
+  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
   <style>
-    :root{
-      --bg:#090808;
-      --panel:#111;
-      --panel-strong:#161515;
-      --text:#f1ede5;
-      --muted:#b9ac99;
-      --accent:#c69c6d;
-      --accent-strong:#e0b877;
-      --stroke:rgba(255,255,255,0.08);
-      letter-spacing:0.01em;
-      color-scheme: dark;
+    :root {
+      --bg: #0f1012;
+      --bg-soft: #191b20;
+      --accent: #ff9f7a;
+      --accent-soft: rgba(255,159,122,0.18);
+      --text: #f7f5f2;
+      --muted: #9ca3af;
+      --border: #2a2d35;
+      --radius-lg: 24px;
+      --radius-md: 16px;
+      --shadow-soft: 0 18px 45px rgba(0,0,0,0.45);
     }
-    *{box-sizing:border-box}
-    html,body{
-      margin:0;padding:0;min-height:100%;
-      background:
-        linear-gradient(135deg,rgba(8,7,7,0.92),rgba(8,7,7,0.82)),
-        url("https://www.instagram.com/p/DRO-ZuDiGSK/?utm_source=ig_embed") center/cover fixed no-repeat;
-      color:var(--text);font-family:"Work Sans",system-ui,-apple-system,"Segoe UI",sans-serif
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
     }
-    a{color:inherit;text-decoration:none}
 
-    header{position:sticky;top:0;z-index:50;background:rgba(8,7,7,0.8);backdrop-filter:blur(14px);border-bottom:1px solid var(--stroke)}
-    .nav{max-width:1180px;margin:0 auto;padding:1rem 1.25rem;display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap}
-    .brand{display:flex;align-items:center;gap:.9rem}
-    .brand-mark{width:44px;height:44px;border-radius:12px;background:linear-gradient(135deg,var(--accent),var(--accent-strong));display:grid;place-items:center;font-family:"Cinzel",serif;font-weight:700;color:#0b0a0a;box-shadow:0 10px 24px rgba(198,156,109,0.35);letter-spacing:.05em}
-    .brand-text{line-height:1.2}
-    .brand-title{font-family:"Cinzel",serif;font-size:1.1rem;letter-spacing:.1em;text-transform:uppercase}
-    .brand-sub{color:var(--muted);font-size:.95rem}
-    .navlinks{display:flex;gap:.75rem;align-items:center;flex-wrap:wrap}
-    .navlinks a{padding:.55rem .8rem;border-radius:999px;border:1px solid transparent;color:var(--muted);font-weight:600;letter-spacing:.04em;text-transform:uppercase;font-size:.85rem;transition:color .25s,border-color .25s,background .25s}
-    .navlinks a:hover{color:var(--text);border-color:var(--stroke);background:rgba(255,255,255,0.05)}
-    .nav-cta{background:linear-gradient(90deg,var(--accent),var(--accent-strong));color:#0a0a0a;font-weight:700;border-radius:999px;padding:.6rem 1.1rem;box-shadow:0 12px 28px rgba(198,156,109,0.35);text-transform:uppercase;letter-spacing:.08em}
-
-    main{max-width:1180px;margin:0 auto;padding:2.5rem 1.25rem 3.5rem;display:flex;flex-direction:column;gap:3.5rem}
-
-    .hero{position:relative;overflow:hidden;border:1px solid var(--stroke);border-radius:18px;padding:2.6rem 2.3rem;background:linear-gradient(135deg,rgba(0,0,0,0.65),rgba(8,7,7,0.85));box-shadow:0 24px 90px rgba(0,0,0,0.55);isolation:isolate}
-    .hero::before{content:"";position:absolute;inset:-20%;background:url("https://images.unsplash.com/photo-1524504388940-1e1a8c6e0c4c?auto=format&fit=crop&w=1800&q=80") center/cover no-repeat;opacity:0.18;filter:grayscale(1);z-index:-2}
-    .hero::after{content:"";position:absolute;inset:0;background:radial-gradient(circle at 25% 20%,rgba(198,156,109,0.28),transparent 42%);z-index:-1}
-    .hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:2rem;align-items:start}
-    .eyebrow{color:var(--accent-strong);font-weight:700;letter-spacing:.22em;font-size:.82rem;text-transform:uppercase}
-    h1{font-family:"Cinzel",serif;font-size:2.9rem;line-height:1.1;margin:.5rem 0 1rem;letter-spacing:.02em;text-transform:uppercase}
-    .lead{color:var(--muted);font-size:1.05rem;line-height:1.7;max-width:62ch}
-    .hero-actions{display:flex;gap:1rem;flex-wrap:wrap;margin-top:1.35rem}
-    .btn{display:inline-flex;align-items:center;gap:.55rem;padding:.85rem 1.35rem;border-radius:12px;border:1px solid var(--accent);background:transparent;color:var(--text);font-weight:700;letter-spacing:.06em;text-transform:uppercase;transition:transform .2s,box-shadow .3s,background .2s,border-color .2s}
-    .btn:hover{transform:translateY(-2px);box-shadow:0 12px 28px rgba(198,156,109,0.35);background:rgba(198,156,109,0.1)}
-    .btn-primary{background:linear-gradient(90deg,var(--accent),var(--accent-strong));color:#0a0a0a;border:none}
-    .btn-ghost{border-color:var(--stroke)}
-    .tags{display:flex;gap:.55rem;flex-wrap:wrap;margin-top:1.1rem}
-    .tag{padding:.4rem .75rem;border-radius:999px;background:rgba(255,255,255,0.06);color:var(--muted);font-size:.9rem;border:1px solid var(--stroke);letter-spacing:.03em;text-transform:uppercase}
-
-    .hero-card{background:rgba(0,0,0,0.55);border:1px solid var(--stroke);border-radius:14px;padding:1.25rem;backdrop-filter:blur(8px);box-shadow:0 10px 30px rgba(0,0,0,0.45)}
-    .hero-card h3{margin:0 0 .35rem;font-family:"Cinzel",serif;font-size:1.05rem;letter-spacing:.08em;text-transform:uppercase}
-    .hero-card p{margin:0;color:var(--muted);line-height:1.6}
-
-    .stat-strip{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:1rem;margin-top:1.25rem}
-    .stat{padding:1rem 1.1rem;border-radius:14px;border:1px solid var(--stroke);background:var(--panel);text-align:left}
-    .stat-number{font-family:"Cinzel",serif;font-size:1.6rem;font-weight:700;color:var(--accent)}
-    .stat-label{color:var(--muted);text-transform:uppercase;letter-spacing:.07em;font-size:.9rem;margin-top:.2rem}
-
-    .section{border:1px solid var(--stroke);border-radius:16px;padding:1.9rem 1.6rem;background:rgba(0,0,0,0.65);box-shadow:0 14px 40px rgba(0,0,0,0.48)}
-    .section h2{font-family:"Cinzel",serif;font-size:1.8rem;margin:0 0 .4rem;letter-spacing:.08em;text-transform:uppercase}
-    .section p.lead-small{color:var(--muted);max-width:72ch;margin:.25rem 0 1.4rem;line-height:1.7}
-
-    .insta-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1rem}
-    .insta-card{border-radius:14px;overflow:hidden;border:1px solid var(--stroke);background:rgba(0,0,0,0.5);box-shadow:0 14px 36px rgba(0,0,0,0.4);transition:transform .35s ease,box-shadow .35s ease}
-    .insta-card:hover{transform:translateY(-4px);box-shadow:0 18px 46px rgba(198,156,109,0.25)}
-    blockquote.instagram-media{margin:0 auto!important;max-width:100%!important;width:100%!important;background:transparent;}
-    .ig-note{color:var(--muted);margin-top:.8rem;line-height:1.6}
-    .reveal{opacity:0;transform:translateY(30px);transition:opacity .6s ease,transform .6s ease}
-    .reveal.visible{opacity:1;transform:translateY(0)}
-
-    .about{display:grid;grid-template-columns:1.05fr .95fr;gap:1.25rem}
-    .panel-text{padding:1.25rem 1.3rem;border:1px solid var(--stroke);border-radius:14px;background:var(--panel-strong);box-shadow:0 12px 28px rgba(0,0,0,0.32)}
-    .panel-text h3{margin:0 0 .4rem;font-family:"Cinzel",serif;letter-spacing:.06em;text-transform:uppercase}
-    .panel-text p{margin:.25rem 0;color:var(--muted);line-height:1.7}
-    .steps{list-style:none;padding:0;margin:.6rem 0 0;display:grid;gap:.6rem}
-    .steps li{padding:.85rem .9rem;border-radius:12px;border:1px solid var(--stroke);background:rgba(255,255,255,0.02);color:var(--muted);letter-spacing:.03em}
-
-    footer{border-top:1px solid var(--stroke);padding:1.5rem 1.25rem 2rem;margin-top:1rem;color:var(--muted);text-align:center;font-size:.95rem;background:rgba(0,0,0,0.35)}
-    footer a{color:var(--accent);font-weight:600}
-
-    @media(max-width:1024px){
-      .hero-grid{grid-template-columns:1fr}
-      .about{grid-template-columns:1fr}
+    body {
+      font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+      background: radial-gradient(circle at top left, #262633 0, #060608 45%, #050507 100%);
+      color: var(--text);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
     }
-    @media(max-width:640px){
-      h1{font-size:2.1rem}
-      .hero{padding:1.7rem}
-      header{position:sticky}
-      .navlinks{justify-content:flex-start}
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    main {
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 1.5rem 1.25rem 4rem;
+    }
+
+    /* Header */
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 40;
+      background: linear-gradient(to bottom, rgba(6,6,9,0.96), rgba(6,6,9,0.9));
+      backdrop-filter: blur(18px);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .nav-inner {
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 0.75rem 1.25rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1.5rem;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    .logo-mark {
+      width: 34px;
+      height: 34px;
+      border-radius: 999px;
+      border: 1px solid var(--accent-soft);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: var(--accent);
+      box-shadow: 0 0 0 1px rgba(0,0,0,0.5);
+      background: radial-gradient(circle at 30% 0, rgba(255,255,255,0.15), #111118);
+    }
+
+    .logo-text {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .logo-text span:first-child {
+      font-family: "Poppins", system-ui, sans-serif;
+      font-size: 0.98rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    .logo-text span:last-child {
+      font-size: 0.8rem;
+      color: var(--muted);
+    }
+
+    nav {
+      display: flex;
+      gap: 1.25rem;
+      font-size: 0.9rem;
+      color: var(--muted);
+    }
+
+    nav a {
+      padding: 0.25rem 0;
+      position: relative;
+    }
+
+    nav a::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -4px;
+      width: 0%;
+      height: 2px;
+      border-radius: 999px;
+      background: linear-gradient(90deg, var(--accent), #ffc078);
+      transition: width 0.22s ease;
+    }
+
+    nav a:hover::after {
+      width: 100%;
+    }
+
+    .btn-nav {
+      padding: 0.45rem 0.95rem;
+      border-radius: 999px;
+      border: 1px solid var(--accent-soft);
+      font-size: 0.85rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      background: radial-gradient(circle at top left, rgba(255,159,122,0.12), rgba(0,0,0,0.7));
+      box-shadow: 0 0 0 1px rgba(0,0,0,0.5);
+    }
+
+    .btn-nav span {
+      font-size: 1.1rem;
+      line-height: 1;
+    }
+
+    /* Hero */
+
+    .hero {
+      display: grid;
+      grid-template-columns: minmax(0, 1.15fr) minmax(0, 1.1fr);
+      gap: 2.5rem;
+      align-items: center;
+      padding-top: 2.5rem;
+    }
+
+    .hero-text h1 {
+      font-family: "Poppins", system-ui, sans-serif;
+      font-size: clamp(2.3rem, 4vw, 3rem);
+      line-height: 1.1;
+      margin-bottom: 1rem;
+    }
+
+    .hero-text h1 span {
+      background: linear-gradient(120deg, #ffe0c2, #ff9f7a);
+      -webkit-background-clip: text;
+      color: transparent;
+    }
+
+    .hero-subline {
+      font-size: 0.95rem;
+      text-transform: uppercase;
+      letter-spacing: 0.18em;
+      color: var(--muted);
+      margin-bottom: 0.75rem;
+    }
+
+    .hero-text p {
+      max-width: 32rem;
+      color: #d0d4dd;
+      font-size: 0.98rem;
+      margin-bottom: 1.4rem;
+    }
+
+    .hero-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.55rem;
+      margin-bottom: 1.6rem;
+    }
+
+    .hero-tags span {
+      font-size: 0.78rem;
+      text-transform: uppercase;
+      letter-spacing: 0.13em;
+      padding: 0.35rem 0.75rem;
+      border-radius: 999px;
+      border: 1px solid var(--border);
+      background: rgba(15,16,20,0.7);
+      color: var(--muted);
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      align-items: center;
+    }
+
+    .btn-primary {
+      padding: 0.75rem 1.55rem;
+      border-radius: 999px;
+      border: none;
+      font-size: 0.98rem;
+      font-weight: 500;
+      cursor: pointer;
+      background: radial-gradient(circle at top left, #ffe0c2, #ff9f7a);
+      color: #23120b;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      box-shadow: 0 18px 45px rgba(0,0,0,0.6);
+    }
+
+    .btn-primary span {
+      font-size: 1.2rem;
+    }
+
+    .btn-ghost {
+      padding: 0.7rem 1.3rem;
+      border-radius: 999px;
+      border: 1px solid var(--border);
+      background: rgba(15,16,20,0.7);
+      color: var(--muted);
+      font-size: 0.9rem;
+      cursor: pointer;
+    }
+
+    .hero-note {
+      font-size: 0.8rem;
+      color: var(--muted);
+      margin-top: 0.75rem;
+    }
+
+    .hero-media {
+      position: relative;
+    }
+
+    .hero-card {
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      background: linear-gradient(145deg, #191a22, #101018);
+      padding: 0.75rem;
+      box-shadow: var(--shadow-soft);
+      border: 1px solid rgba(255,255,255,0.02);
+    }
+
+    .hero-main-image {
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      aspect-ratio: 4/5;
+      background: #111;
+    }
+
+    .hero-main-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .hero-floating {
+      position: absolute;
+      bottom: -1.25rem;
+      right: -0.2rem;
+      transform: translateY(0);
+      animation: float 6s ease-in-out infinite;
+    }
+
+    .hero-floating-inner {
+      background: rgba(9,10,14,0.96);
+      border-radius: 999px;
+      padding: 0.7rem 1rem;
+      display: flex;
+      align-items: center;
+      gap: 0.65rem;
+      border: 1px solid var(--border);
+      box-shadow: 0 16px 40px rgba(0,0,0,0.75);
+    }
+
+    .hero-floating-badge {
+      width: 32px;
+      height: 32px;
+      border-radius: 999px;
+      border: 1px solid var(--accent-soft);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.75rem;
+      color: var(--accent);
+      background: radial-gradient(circle at 30% 0, rgba(255,255,255,0.1), #15151c);
+    }
+
+    .hero-floating-text {
+      font-size: 0.78rem;
+      color: var(--muted);
+      line-height: 1.3;
+    }
+
+    .hero-floating-text strong {
+      display: block;
+      color: var(--text);
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-8px); }
+    }
+
+    /* Section base */
+
+    section {
+      margin-top: 3.5rem;
+    }
+
+    .section-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      gap: 1rem;
+      margin-bottom: 1.75rem;
+    }
+
+    .section-header h2 {
+      font-family: "Poppins", system-ui, sans-serif;
+      font-size: 1.4rem;
+    }
+
+    .section-header p {
+      font-size: 0.9rem;
+      color: var(--muted);
+      max-width: 24rem;
+    }
+
+    /* About */
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.1fr) minmax(0, 1.1fr);
+      gap: 2.1rem;
+      align-items: center;
+    }
+
+    .about-card {
+      background: rgba(12,14,19,0.9);
+      border-radius: var(--radius-lg);
+      border: 1px solid var(--border);
+      padding: 1.4rem 1.6rem;
+      box-shadow: 0 14px 38px rgba(0,0,0,0.5);
+    }
+
+    .about-card p {
+      font-size: 0.95rem;
+      color: #d4d7e0;
+      margin-bottom: 1rem;
+    }
+
+    .about-list {
+      list-style: none;
+      display: grid;
+      gap: 0.7rem;
+      margin-top: 0.75rem;
+      font-size: 0.9rem;
+      color: var(--muted);
+    }
+
+    .about-list li::before {
+      content: "✦";
+      margin-right: 0.4rem;
+      color: var(--accent);
+    }
+
+    .about-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-top: 1.25rem;
+      font-size: 0.85rem;
+      color: var(--muted);
+    }
+
+    .about-meta span strong {
+      color: var(--text);
+    }
+
+    .about-photo {
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      border: 1px solid rgba(255,255,255,0.03);
+      background: #101017;
+      box-shadow: var(--shadow-soft);
+    }
+
+    .about-photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    /* Gallery */
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(12, minmax(0, 1fr));
+      gap: 0.9rem;
+    }
+
+    .gallery-item {
+      border-radius: 18px;
+      overflow: hidden;
+      background: #101017;
+      border: 1px solid rgba(255,255,255,0.03);
+      position: relative;
+      isolation: isolate;
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.35s ease, opacity 0.35s ease;
+    }
+
+    .gallery-item::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(0,0,0,0.6), transparent 55%);
+      opacity: 0;
+      transition: opacity 0.35s ease;
+    }
+
+    .gallery-item span {
+      position: absolute;
+      left: 0.9rem;
+      bottom: 0.8rem;
+      font-size: 0.75rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: #fdf2e9;
+      opacity: 0;
+      z-index: 2;
+      transition: opacity 0.35s ease, transform 0.35s ease;
+      transform: translateY(6px);
+    }
+
+    .gallery-item:hover img {
+      transform: scale(1.05);
+      opacity: 0.85;
+    }
+
+    .gallery-item:hover::after,
+    .gallery-item:hover span {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .gallery-item.large {
+      grid-column: span 7;
+      aspect-ratio: 4/3;
+    }
+
+    .gallery-item.tall {
+      grid-column: span 5;
+      aspect-ratio: 3/4;
+    }
+
+    .gallery-item.small {
+      grid-column: span 4;
+      aspect-ratio: 3/4;
+    }
+
+    .section-note {
+      margin-top: 0.75rem;
+      font-size: 0.8rem;
+      color: var(--muted);
+    }
+
+    /* Info / Contact */
+
+    .info-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
+      gap: 1.8rem;
+    }
+
+    .info-card {
+      background: rgba(12,14,19,0.9);
+      border-radius: var(--radius-lg);
+      border: 1px solid var(--border);
+      padding: 1.5rem 1.6rem;
+      box-shadow: 0 14px 38px rgba(0,0,0,0.5);
+      font-size: 0.92rem;
+    }
+
+    .steps {
+      list-style: none;
+      display: grid;
+      gap: 0.9rem;
+      margin-top: 0.5rem;
+    }
+
+    .step {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.75rem;
+    }
+
+    .step-badge {
+      width: 26px;
+      height: 26px;
+      border-radius: 999px;
+      border: 1px solid var(--accent-soft);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.78rem;
+      color: var(--accent);
+      background: rgba(10,11,16,0.9);
+      flex-shrink: 0;
+    }
+
+    .step-text strong {
+      display: block;
+      margin-bottom: 0.15rem;
+      font-weight: 500;
+    }
+
+    .cta-card {
+      background: radial-gradient(circle at top left, #2b2220, #151319 58%, #0a0a0f);
+      border-radius: var(--radius-lg);
+      border: 1px solid var(--accent-soft);
+      padding: 1.4rem 1.6rem;
+      box-shadow: var(--shadow-soft);
+      display: grid;
+      gap: 0.8rem;
+    }
+
+    .cta-card h3 {
+      font-family: "Poppins", system-ui, sans-serif;
+      font-size: 1.1rem;
+    }
+
+    .cta-card p {
+      font-size: 0.9rem;
+      color: #fbeae0;
+    }
+
+    .cta-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.6rem;
+      align-items: center;
+    }
+
+    .cta-handle {
+      font-family: "Poppins", system-ui, sans-serif;
+      font-size: 0.95rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #ffe0c2;
+    }
+
+    .cta-chip {
+      font-size: 0.78rem;
+      padding: 0.3rem 0.7rem;
+      border-radius: 999px;
+      background: rgba(15,16,20,0.75);
+      border: 1px solid rgba(255,255,255,0.18);
+      color: #fce9db;
+    }
+
+    footer {
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 1.5rem 1.25rem 2.5rem;
+      font-size: 0.78rem;
+      color: var(--muted);
+      border-top: 1px solid var(--border);
+      display: flex;
+      justify-content: space-between;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    footer a {
+      color: var(--muted);
+      text-decoration: underline;
+      text-decoration-style: dotted;
+    }
+
+    /* Responsive */
+
+    @media (max-width: 880px) {
+      nav {
+        display: none;
+      }
+
+      main {
+        padding-top: 2rem;
+      }
+
+      .hero {
+        grid-template-columns: minmax(0, 1fr);
+      }
+
+      .hero-media {
+        order: -1;
+      }
+
+      .hero-floating {
+        position: static;
+        margin-top: 0.9rem;
+        animation: none;
+      }
+
+      .about-grid,
+      .info-grid {
+        grid-template-columns: minmax(0, 1fr);
+      }
+
+      .gallery-item.large,
+      .gallery-item.tall,
+      .gallery-item.small {
+        grid-column: span 12;
+      }
+
+      .section-header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
     }
   </style>
 </head>
 <body>
   <header>
-    <div class="nav">
-      <div class="brand">
-        <div class="brand-mark">JI</div>
-        <div class="brand-text">
-          <div class="brand-title">Jawana Inx</div>
-          <div class="brand-sub">Tattoo • Illustration</div>
+    <div class="nav-inner">
+      <div class="logo">
+        <div class="logo-mark">J</div>
+        <div class="logo-text">
+          <span>JAWANAINX</span>
+          <span>Tattoo Artist in Ausbildung</span>
         </div>
       </div>
-      <div class="navlinks">
-        <a href="#instagram">Instagram</a>
-        <a href="#about">Über &amp; Booking</a>
-        <a class="nav-cta" href="https://instagram.com/jawana.inx" target="_blank" rel="noopener noreferrer">@jawana.inx</a>
-      </div>
+      <nav>
+        <a href="#about">Über Johanna</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#info">Ablauf & Studio</a>
+        <a class="btn-nav" href="https://www.instagram.com/jawanainx" target="_blank" rel="noopener">
+          Instagram<span>↗</span>
+        </a>
+      </nav>
     </div>
   </header>
 
   <main>
-    <section class="hero" aria-labelledby="hero-title">
-      <div class="hero-grid">
-        <div>
-          <div class="eyebrow">White Lotus Tattoostudio • Wertheim</div>
-          <h1 id="hero-title">Feine Tattoos mit ruhiger Hand – noch auf dem Weg zur Meisterschaft.</h1>
-          <p class="lead">Gestochen im White Lotus Tattoostudio in Wertheim. Ich bin Anfängerin und baue Erfahrung auf – mit Fokus auf saubere Linien, Hygiene und ehrlicher Kommunikation. Danke für dein Vertrauen und deine Geduld.</p>
-          <div class="hero-actions">
-            <a class="btn btn-primary" href="https://instagram.com/jawana.inx" target="_blank" rel="noopener noreferrer">Termin anfragen</a>
-            <a class="btn btn-ghost" href="#instagram">Instagram</a>
-          </div>
-          <div class="tags">
-            <span class="tag">Lernende Künstlerin</span>
-            <span class="tag">Feinlinie</span>
-            <span class="tag">Hygiene im Fokus</span>
-            <span class="tag">White Lotus Studio</span>
-          </div>
-          <div class="stat-strip">
-            <div class="stat">
-              <div class="stat-number">250+</div>
-              <div class="stat-label">gestochene Motive</div>
-            </div>
-            <div class="stat">
-              <div class="stat-number">4.9★</div>
-              <div class="stat-label">Kundenfeedback</div>
-            </div>
-            <div class="stat">
-              <div class="stat-number">Studio</div>
-              <div class="stat-label">Hygiene &amp; Ruhe</div>
-            </div>
-          </div>
+    <!-- Hero -->
+    <section class="hero" id="top">
+      <div class="hero-text">
+        <div class="hero-subline">Tattoo · Fineline · individuelle Motive</div>
+        <h1>Hey, ich bin <span>Johanna</span> – angehende Tattoo Artistin.</h1>
+        <p>
+          Mit viel Ruhe, Liebe zum Detail und einem Blick für Formen & Linien begleitet Johanna dich
+          von der ersten Idee bis zum fertigen Tattoo. Aktuell befindet sie sich in der Ausbildung –
+          perfekt für alle, die ein persönliches, liebevoll umgesetztes Tattoo möchten.
+        </p>
+        <div class="hero-tags">
+          <span>ruhige Atmosphäre</span>
+          <span>detaillierte Linien</span>
+          <span>individuelle Beratung</span>
         </div>
+        <div class="hero-actions">
+          <a class="btn-primary" href="https://www.instagram.com/jawanainx" target="_blank" rel="noopener">
+            Jetzt Motiv anfragen <span>✉</span>
+          </a>
+          <a class="btn-ghost" href="#portfolio">Arbeiten ansehen</a>
+        </div>
+        <p class="hero-note">
+          Termin- und Motiv-Anfragen aktuell ausschließlich über Instagram-Direktnachricht.
+        </p>
+      </div>
+
+      <div class="hero-media">
         <div class="hero-card">
-          <h3>Booking &amp; Location</h3>
-          <p>Studio: White Lotus Tattoostudio, Wertheim. Melde dich per DM mit Motividee, Placement und Größe.</p>
-          <p>Ich steche als Beginnerin: ehrliche Einschätzung, genug Zeit und sterile Arbeitsweise. Bitte um Verständnis, falls Termine länger dauern.</p>
-          <div class="hero-actions">
-            <a class="btn btn-primary" href="https://instagram.com/jawana.inx" target="_blank" rel="noopener noreferrer">DM senden</a>
-            <a class="btn btn-ghost" href="mailto:hi@jawana.inx?subject=Tattoo%20Anfrage">Mail</a>
+          <div class="hero-main-image">
+            <!-- Portrait / Hauptbild -->
+            <img src="DSCF2733.JPG" alt="Johanna, lächelnd in ihrem Tattoo-Setup." />
+          </div>
+        </div>
+
+        <div class="hero-floating">
+          <div class="hero-floating-inner">
+            <div class="hero-floating-badge">★</div>
+            <div class="hero-floating-text">
+              <strong>Sauberkeit & Hygiene</strong>
+              Einwegmaterialien, desinfizierte Flächen und ein sicheres Gefühl bei jedem Termin.
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="instagram" class="section" aria-labelledby="instagram-title">
-      <h2 id="instagram-title">Instagram Highlights</h2>
-      <p class="lead-small">Echte Arbeiten von @jawana.inx – als Instagram-Embed mit smoothen Reveal-Effekten. Tippe auf die Posts für Details.</p>
-      <div class="insta-grid">
-        <div class="insta-card reveal"><blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DRatLh5iO9h/" data-instgrm-version="14"></blockquote></div>
-        <div class="insta-card reveal"><blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DRO-ZuDiGSK/" data-instgrm-version="14"></blockquote></div>
-        <div class="insta-card reveal"><blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DRjXvAFiBR2/" data-instgrm-version="14"></blockquote></div>
-        <div class="insta-card reveal"><blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DRltx57iHw-/" data-instgrm-version="14"></blockquote></div>
-        <div class="insta-card reveal"><blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DRob9uJiHPV/" data-instgrm-version="14"></blockquote></div>
-        <div class="insta-card reveal"><blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DRCPa8eCN-y/" data-instgrm-version="14"></blockquote></div>
+    <!-- About -->
+    <section id="about">
+      <div class="section-header">
+        <h2>Über Johanna</h2>
+        <p>
+          Tattoos sind für Johanna mehr als nur Farbe in der Haut – sie sind kleine Geschichten,
+          Erinnerungen und Momentaufnahmen, die dich dein Leben lang begleiten dürfen.
+        </p>
       </div>
-      <p class="ig-note">Mehr Arbeiten, Flash Drops und Verfügbarkeiten direkt im Feed: <a href="https://instagram.com/jawana.inx" target="_blank" rel="noopener noreferrer">@jawana.inx</a></p>
+
+      <div class="about-grid">
+        <div class="about-card">
+          <p>
+            Johanna befindet sich aktuell in ihrer Ausbildung als Tattoo Artist und baut Schritt für
+            Schritt ihr eigenes Portfolio auf. Dabei legt sie großen Wert auf feine Linien,
+            harmonische Kompositionen und eine entspannte, respektvolle Atmosphäre im Studio.
+          </p>
+          <p>
+            Dir ist wichtig, dass du dich beim Termin wohl fühlst, Fragen stellen kannst und genügend
+            Zeit für dein Motiv bleibt? Genau so arbeitet Johanna: transparent, ruhig und auf Augenhöhe.
+          </p>
+
+          <ul class="about-list">
+            <li>individuelle Motivbesprechung & ehrliche Einschätzung</li>
+            <li>fokussiert auf sauberes Handwerk und präzise Linien</li>
+            <li>ruhige Umgebung – ohne Zeitdruck und mit genug Raum für Pausen</li>
+          </ul>
+
+          <div class="about-meta">
+            <span><strong>Status:</strong> Tattoo Artist in Ausbildung</span>
+            <span><strong>Sprache:</strong> Deutsch & Englisch</span>
+          </div>
+        </div>
+
+        <div class="about-photo">
+          <!-- sitzendes Portrait -->
+          <img src="DSCF2901.JPG" alt="Johanna sitzt lächelnd im Studio vor einem Tattoo-Banner." />
+        </div>
+      </div>
     </section>
 
-    <section id="about" class="section" aria-labelledby="about-title">
-      <h2 id="about-title">Studio &amp; Booking</h2>
-      <div class="about">
-        <div class="panel-text">
-          <h3>Studio Vibe</h3>
-          <p>White Lotus Tattoostudio, Wertheim: saubere Plätze, ruhige Atmosphäre, geduldiger Ablauf. Ich lerne, nehme mir Zeit und halte die Hygiene streng ein.</p>
-          <p>Bring Referenzen oder nur eine Idee mit. Wir besprechen offen, was technisch möglich ist, und entwickeln gemeinsam dein Motiv.</p>
+    <!-- Portfolio / Gallery -->
+    <section id="portfolio">
+      <div class="section-header">
+        <h2>Einblicke ins Arbeiten</h2>
+        <p>
+          Hier bekommst du ein Gefühl für Johanna als Künstlerin: konzentriert beim Tätowieren,
+          entspannt im Gespräch mit Kund*innen und in ihrem Studio-Alltag.
+        </p>
+      </div>
+
+      <div class="gallery-grid">
+        <div class="gallery-item large">
+          <img src="DSCF1664.jpeg" alt="Johanna tätowiert konzentriert an einem Rückenmotiv." />
+          <span>Beim Tätowieren</span>
         </div>
-        <div class="panel-text">
-          <h3>So buchst du</h3>
+        <div class="gallery-item tall">
+          <img src="DSCF2061.JPG" alt="Johanna bereitet den Arm eines Kunden auf ein Tattoo vor." />
+          <span>Vorbereitung</span>
+        </div>
+        <div class="gallery-item small">
+          <img src="DSCF2262.JPG" alt="Johanna mit Mütze im Gespräch im Studio." />
+          <span>Studio-Moment</span>
+        </div>
+        <div class="gallery-item small">
+          <img src="IMG_2935.jpg" alt="Portrait von Johanna, tätowiert und gut gelaunt." />
+          <span>Portrait</span>
+        </div>
+      </div>
+
+      <p class="section-note">
+        Hinweis: Die Galerie zeigt Johanna bei der Arbeit. Für abgeheilte Tattoos und aktuelle
+        Projekte folge ihr auf Instagram unter <strong>@jawanainx</strong>.
+      </p>
+    </section>
+
+    <!-- Info & Contact -->
+    <section id="info">
+      <div class="section-header">
+        <h2>Ablauf & Studio</h2>
+        <p>
+          Du warst noch nie beim Tätowieren oder hast viele Fragen? Kein Problem. So läuft ein
+          Termin bei Johanna in der Regel ab:
+        </p>
+      </div>
+
+      <div class="info-grid">
+        <div class="info-card">
           <ul class="steps">
-            <li>DM an @jawana.inx mit Motividee, Placement &amp; Größe.</li>
-            <li>Ehrliches Feedback zur Machbarkeit (ich bin Anfängerin) + Terminvorschläge.</li>
-            <li>Am Termin: Skizze finalisieren, Placement prüfen, dann in Ruhe stechen.</li>
-            <li>Nachsorge-Guides und Pflegehinweise gibt es direkt mit.</li>
+            <li class="step">
+              <div class="step-badge">1</div>
+              <div class="step-text">
+                <strong>Kontakt & Idee</strong>
+                Schreib Johanna über Instagram eine Nachricht mit deiner Motividee, Stelle am Körper
+                und ungefähren Größe. Referenzbilder helfen sehr.
+              </div>
+            </li>
+            <li class="step">
+              <div class="step-badge">2</div>
+              <div class="step-text">
+                <strong>Besprechung & Skizze</strong>
+                Gemeinsam klärt ihr, was möglich ist, welche Linienstärke passt und wie sich das Motiv
+                gut zu deinem Körper fügt.
+              </div>
+            </li>
+            <li class="step">
+              <div class="step-badge">3</div>
+              <div class="step-text">
+                <strong>Termin & Tattoo-Session</strong>
+                Am Termin selbst wird alles in Ruhe vorbereitet – von der Rasur und Desinfektion
+                bis zum Stencil. Du kannst jederzeit Pausen einlegen.
+              </div>
+            </li>
+            <li class="step">
+              <div class="step-badge">4</div>
+              <div class="step-text">
+                <strong>Aftercare</strong>
+                Du bekommst klare Pflegeanweisungen, damit dein Tattoo gut verheilt und lange schön
+                bleibt. Fragen nach dem Termin sind jederzeit willkommen.
+              </div>
+            </li>
           </ul>
-          <div class="hero-actions">
-            <a class="btn btn-primary" href="https://instagram.com/jawana.inx" target="_blank" rel="noopener noreferrer">Nachricht senden</a>
-            <a class="btn btn-ghost" href="mailto:hi@jawana.inx?subject=Tattoo%20Anfrage">Alternativ per Mail</a>
+        </div>
+
+        <div class="cta-card">
+          <h3>Lust auf ein Tattoo bei Johanna?</h3>
+          <p>
+            Der einfachste Weg für deine Anfrage ist Instagram. Schick ihr dort deine Idee – gerne mit
+            Fotos oder Zeichnungen – und sie meldet sich bei dir mit weiteren Infos.
+          </p>
+          <div class="cta-actions">
+            <span class="cta-handle">@JAWANAINX</span>
+            <a class="btn-primary" href="https://www.instagram.com/jawanainx" target="_blank" rel="noopener">
+              Zu Instagram <span>↗</span>
+            </a>
+            <span class="cta-chip">DM für Termine & Fragen</span>
           </div>
         </div>
       </div>
@@ -205,26 +867,15 @@
   </main>
 
   <footer>
-    © <span id="year"></span> Jawana Inx · Tattoo &amp; Illustration · Instagram: <a href="https://instagram.com/jawana.inx" target="_blank" rel="noopener noreferrer">@jawana.inx</a>
+    <span>© <span id="year"></span> Johanna · jawanainx · Alle Rechte vorbehalten.</span>
+    <span>Website mit ❤️ erstellt von Freunden.</span>
   </footer>
 
-  <script async src="https://www.instagram.com/embed.js"></script>
   <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-    const reveals = document.querySelectorAll('.reveal');
-    if ('IntersectionObserver' in window){
-      const io = new IntersectionObserver(entries=>{
-        entries.forEach(entry=>{
-          if(entry.isIntersecting){
-            entry.target.classList.add('visible');
-            io.unobserve(entry.target);
-          }
-        });
-      },{threshold:0.2});
-      reveals.forEach(el=>io.observe(el));
-    } else {
-      reveals.forEach(el=>el.classList.add('visible'));
-    }
+    // Jahreszahl automatisch aktualisieren
+    document.getElementById("year").textContent = new Date().getFullYear();
+    // Smooth Scrolling (optional, funktioniert in modernen Browsern auch via CSS)
+    document.documentElement.style.scrollBehavior = "smooth";
   </script>
 </body>
 </html>
