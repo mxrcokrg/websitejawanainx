@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pflegehinweise | jawana.inx</title>
+  <meta name="description" content="Pflegehinweise Tattoo Black Zodiac & Groot's Ink. Alles zur Nachsorge, Heilung und Nachstechen." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0f1012;
+      --bg-soft: #191b20;
+      --text: #f7f5f2;
+      --muted: #9ca3af;
+      --accent: #ff9f7a;
+      --accent-soft: rgba(255,159,122,0.2);
+      --border: #2a2d35;
+      --radius-lg: 22px;
+      --shadow-soft: 0 18px 45px rgba(0,0,0,0.45);
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+      background:
+        linear-gradient(180deg, rgba(4,4,6,0.82), rgba(4,4,6,0.92)),
+        radial-gradient(circle at top left, #262633 0, #060608 45%, #050507 100%);
+      color: var(--text);
+      min-height: 100vh;
+      padding: 1.6rem 1.2rem 2.6rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .frame {
+      width: min(1040px, 100%);
+      background: rgba(12,14,19,0.9);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-soft);
+      padding: 1.6rem 1.6rem 1.9rem;
+      position: relative;
+      overflow: hidden;
+    }
+    .glow {
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(circle at 20% 15%, rgba(255,159,122,0.12), transparent 38%),
+                  radial-gradient(circle at 80% 0%, rgba(255,159,122,0.1), transparent 42%);
+      pointer-events: none;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      gap: 1rem;
+      align-items: center;
+      margin-bottom: 1.2rem;
+      position: relative;
+      z-index: 1;
+    }
+    .title-block h1 {
+      font-family: "Poppins", system-ui, sans-serif;
+      font-size: clamp(1.5rem, 3vw, 1.9rem);
+      letter-spacing: 0.02em;
+    }
+    .title-block p {
+      color: var(--muted);
+      margin-top: 0.35rem;
+      font-size: 0.95rem;
+      max-width: 640px;
+    }
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+      padding: 0.55rem 1rem;
+      border-radius: 999px;
+      border: 1px solid var(--accent-soft);
+      color: var(--text);
+      background: radial-gradient(circle at top left, rgba(255,159,122,0.12), rgba(0,0,0,0.6));
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 0.92rem;
+    }
+    .sections {
+      display: grid;
+      gap: 1.1rem;
+      position: relative;
+      z-index: 1;
+    }
+    .section {
+      background: rgba(15,16,20,0.75);
+      border: 1px solid rgba(255,255,255,0.04);
+      border-radius: 16px;
+      padding: 1.1rem 1.2rem 1.2rem;
+    }
+    h2 {
+      font-family: "Poppins", system-ui, sans-serif;
+      font-size: 1.05rem;
+      margin-bottom: 0.45rem;
+      letter-spacing: 0.02em;
+      color: var(--text);
+    }
+    p {
+      color: #d0d4dd;
+      line-height: 1.65;
+      margin: 0.35rem 0;
+      font-size: 0.98rem;
+    }
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      background: rgba(255,159,122,0.12);
+      color: var(--accent);
+      border: 1px solid var(--accent-soft);
+      border-radius: 999px;
+      padding: 0.3rem 0.7rem;
+      font-size: 0.82rem;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+    .list {
+      list-style: none;
+      margin: 0.4rem 0 0;
+      padding: 0;
+      display: grid;
+      gap: 0.25rem;
+    }
+    .list li {
+      position: relative;
+      padding-left: 1.4rem;
+      color: #d0d4dd;
+      line-height: 1.55;
+    }
+    .list li::before {
+      content: "✦";
+      position: absolute;
+      left: 0;
+      top: 0.15rem;
+      color: var(--accent);
+      font-size: 0.9rem;
+    }
+    .footnote {
+      font-size: 0.9rem;
+      color: var(--muted);
+      margin-top: 0.9rem;
+    }
+    @media (max-width: 720px) {
+      body { padding-top: 1.1rem; }
+      header { flex-direction: column; align-items: flex-start; }
+      .back-link { width: 100%; justify-content: center; }
+      .section { padding: 1rem 1rem 1.05rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="frame">
+    <div class="glow" aria-hidden="true"></div>
+    <header>
+      <div class="title-block">
+        <h1>Pflegehinweise Tattoo Black Zodiac &amp; Groot's Ink</h1>
+        <p>Damit dein Tattoo sauber verheilt und lange strahlt, findest du hier die wichtigsten Schritte zur Pflege direkt nach dem Stechen und in den folgenden Wochen.</p>
+      </div>
+      <a class="back-link" href="index.html">← Zurück zur Startseite</a>
+    </header>
+
+    <div class="sections">
+      <div class="section">
+        <span class="pill">Nach der Behandlung</span>
+        <p>Nach der Behandlung wird die tätowierte Stelle intensiver und kräftiger erscheinen. Jede Haut nimmt die Tätowierung unterschiedlich auf. Eine Erfolgsgarantie und ein Farbversprechen kann für die Behandlung nicht gegeben werden. Die Haut kann nach der Behandlung irritiert sein, d.h. Rötungen, Schwellungen und Juckreiz hervorrufen. Diese Irritationen klingen erfahrungsgemäß nach einiger Zeit ab.</p>
+      </div>
+
+      <div class="section">
+        <h2>Pflege nach der Behandlung</h2>
+        <p>Nach dem Tätowiervorgang wird ein Spray zum Schutz der Haut aufgetragen. Dieses Spray muss 20 Stunden in der Haut bleiben und darf deshalb nicht in Kontakt mit Wasser (bedeutet nicht duschen), Cremes oder anderen Substanzen kommen. Nach 20h muss die tätowierte Hautstelle gründlich mit reinem Wasser ausgewaschen werden.</p>
+        <p>Nach dem Auswaschen muss das Tattoo mehrmals am Tag mit Wundschutzsalbe wie z.B. Bepanthen, Panthenol oder speziellen Tattoo Cremes eingecremt werden. Bitte beachte, dass jeder Mensch unterschiedlich auf Salben etc. reagiert. Daher empfehle ich Salben zu verwenden, die bereits ohne Reaktionen der Haut o. Ä. verwendet wurden.</p>
+        <p>Bitte bedenke auch, je besser die Tätowierung nun gepflegt wird, umso besser und länger hält die Farbe unter der Haut.</p>
+        <p><strong>Das Tattoo verliert bei einer falschen oder mangelhaften Pflege seine Qualität!</strong></p>
+      </div>
+
+      <div class="section">
+        <h2>Pflege in den kommenden Wochen</h2>
+        <ul class="list">
+          <li>Vermeide in den kommenden 4 - 6 Wochen direkte Sonneneinstrahlung.</li>
+          <li>Kein Solarium, Chlor- oder Salzwasser und keine Saunagänge in dieser Zeit.</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h2>Nachstechen</h2>
+        <p>Durch den natürlichen Heilungsprozess kann es zu einem Farbverlust kommen. Bei einem Farbverlust kann das Tattoo wunschweise nach der Abheilung (ca. 6 - 8 Wochen) nachgestochen werden.</p>
+        <p>Für das Nachstechen berechnen wir je nach Farbverlust und Aufwand 20€-40€. Bei Eigenverschulden, d. h. bei mangelnder Pflege der tätowierten Stelle oder bei Tattoos, die schon des Längeren abgeheilt sind und nur neu aufgefrischt werden sollen, wird der volle Preis für die Nacharbeit berechnet.</p>
+      </div>
+
+      <div class="section">
+        <h2>Kontakt &amp; Fragen</h2>
+        <p>Wir wünschen dir viel Freude mit deiner neuen Tätowierung! Bei Rückfragen oder Unklarheiten kannst du dich gerne mit uns in Verbindung setzen.</p>
+        <p class="footnote">Tattoo Black Zodiac &amp; Groot's Ink</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
